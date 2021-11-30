@@ -1,0 +1,16 @@
+.character-title-preview{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+
+  .vision-src {
+    width: 35px;
+    height: 35px;
+    align-self: center;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}

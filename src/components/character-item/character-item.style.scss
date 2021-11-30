@@ -1,0 +1,22 @@
+.character-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  .character-dp{
+    width: 75px;
+    height: 75px;
+  }
+
+  .character-name{
+    color: white;
+    text-shadow: 0 0 3px black;
+  }
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}

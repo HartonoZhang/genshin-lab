@@ -1,0 +1,40 @@
+.character-preview{
+  color: white;
+  width: 100%;
+  margin: 8px 0;
+
+  .character-item-preview{
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+
+    &.pyro {
+      background-color: #d96462;
+    }
+  
+    &.cryo {
+      background-color: #42bfdd;
+    }
+  
+    &.electro {
+      background-color: #cb4dd5;
+    }
+  
+    &.hydro {
+      background-color: #4073d7;
+    }
+  
+    &.anemo {
+      background-color: #00cd81;
+    }
+  
+    &.geo {
+      background-color: #d9ab42;
+    }
+  }
+}
+
+
