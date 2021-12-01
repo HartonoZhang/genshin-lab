@@ -2,21 +2,22 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 10px;
+  margin: 6px;
   cursor: pointer;
   transition: 0.2s;
 
   .character-dp{
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
   }
 
   .character-name{
     color: white;
     text-shadow: 0 0 3px black;
+    font-size: 14px;
   }
 
   &:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }

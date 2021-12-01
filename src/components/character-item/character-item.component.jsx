@@ -5,7 +5,7 @@ import "./character-item.style.scss";
 const CharacterItem = ({ character, match, history }) => {
   const { name, imgSrc, linkUrl } = character;
   return (
-    <div className="character-item" onClick={() => history.push(`${match.url}character/${linkUrl}`)}>
+    <div className="character-item" onClick={() => history.push(`${match.url}characters/${linkUrl}`)}>
       <img
         className="character-dp"
         src={`${process.env.PUBLIC_URL + imgSrc}`}
