@@ -12,5 +12,29 @@
   .title {
     font-size: 16px;
     margin-left: 5px;
+
+    &.title-pyro {
+      color: #d96462;
+    }
+
+    &.title-cryo {
+      color: #42bfdd;
+    }
+
+    &.title-electro {
+      color: #cb4dd5;
+    }
+
+    &.title-hydro {
+      color: #4073d7;
+    }
+
+    &.title-anemo {
+      color: #00cd81;
+    }
+
+    &.title-geo {
+      color: #d9ab42;
+    }
   }
 }

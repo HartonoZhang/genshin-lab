@@ -3,4 +3,10 @@
   flex-direction: column;
   margin: 10px 0;
   width: 100%;
+  text-align: center;
+
+  .not-found{
+    color: rgb(241, 206, 206);
+    margin: 68px 0;
+  }
 }

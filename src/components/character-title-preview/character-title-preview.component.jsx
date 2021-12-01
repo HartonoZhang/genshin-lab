@@ -7,7 +7,7 @@ const CharacterTitlePreview = ({imgSrc, title}) => (
       src={`${process.env.PUBLIC_URL + imgSrc}`}
       alt="vision"
     />
-    <h2 className="title">{title.toUpperCase()}</h2>
+    <h2 className={`title-${title} title`}>{title.toUpperCase()}</h2>
   </div>
 );
 

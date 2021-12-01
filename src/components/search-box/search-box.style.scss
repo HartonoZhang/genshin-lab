@@ -1,0 +1,23 @@
+.search-box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+
+  .title-search{
+    font-size: 24px;
+  }
+
+  .search-container{
+    align-self: center;
+
+    .search-box-container{
+      border-radius: 8px;
+      padding: 12px;
+      background-color: rgb(49, 49, 49);
+      border: none;
+      color: white;
+      font-size: 15px;
+    }  
+  }
+}

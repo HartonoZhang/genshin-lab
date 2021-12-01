@@ -151,7 +151,7 @@ const Character_Data = {
         id: 22,
         name: "Shogun",
         imgSrc: "/assets/character/raiden.png",
-        linkUrl: "raiden",
+        linkUrl: "shogun",
       },
       {
         id: 23,
