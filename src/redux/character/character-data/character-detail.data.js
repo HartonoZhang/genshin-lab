@@ -1,6 +1,6 @@
 const Character_Detail = {
   traveler_anemo: {
-    id: 1,
+    id: 'A0001',
     name: "Traveler",
     imgSrc: "/assets/character/traveler-anemo.png",
     vision: "Anemo",

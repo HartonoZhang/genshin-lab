@@ -1,0 +1,13 @@
+.weapon-item{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  color: rgb(212, 198, 198);
+  padding: 8px;
+  border: 1px solid #bea4a4;
+  font-size: 14px;
+
+  div {
+    display: grid;
+    align-items: center;
+  }
+}

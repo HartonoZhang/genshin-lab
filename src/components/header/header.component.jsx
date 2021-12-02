@@ -9,6 +9,9 @@ const Header = () => (
         <span className="logo-text">GENSHIN LAB</span>
       </Link>
       <div className="options">
+        <Link className="option" to="/">
+          CHARACTERS
+        </Link>
         <Link className="option" to="/artifacts">
           ARTIFACTS
         </Link>

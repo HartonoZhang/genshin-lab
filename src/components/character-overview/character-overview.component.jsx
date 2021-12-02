@@ -10,6 +10,7 @@ import { searchFilterCharacter } from "../../redux/character/character.action";
 import "./character-overview.style.scss";
 import CharacterPreview from "../character-preview/character-preview.component";
 import SearchBox from "../search-box/search-box.component";
+import TextValidationFound from "../text-validation-found/text-validation-found.component";
 
 const CharacterOverview = ({
   listCharacters,
@@ -37,7 +38,7 @@ const CharacterOverview = ({
           <CharacterPreview key={id} {...otherCollectionProps} />
         ))
       ) : (
-        <h2 className="not-found">Character Not Found</h2>
+        <TextValidationFound textField="Character Not Found" />
       )}
     </div>
   );

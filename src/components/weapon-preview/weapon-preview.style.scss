@@ -1,0 +1,20 @@
+.weapon-preview{
+  width: 100%;
+  margin: 8px 0;
+
+  .header-preview-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    color: white;
+    padding: 6px;
+    border: 1px solid #bea4a4;
+    font-size: 16px;
+    background-color: #685555;
+  }
+
+  .not-found{
+    color: rgb(241, 206, 206);
+    margin: 68px 0;
+  }
+}

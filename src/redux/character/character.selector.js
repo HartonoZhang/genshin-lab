@@ -27,4 +27,4 @@ export const selectCharacterDetail = (collectionUrlParam) =>
     [selectListCharacterDetail],
     (characterDetail) => characterDetail[collectionUrlParam]
   );
-
+ 
