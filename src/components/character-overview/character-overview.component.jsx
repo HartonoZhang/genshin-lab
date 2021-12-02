@@ -5,15 +5,20 @@ import {
   selectCharacters,
   selectSearchFilterCharacter,
 } from "../../redux/character/character.selector";
+import { searchFilterCharacter } from "../../redux/character/character.action";
 
 import "./character-overview.style.scss";
 import CharacterPreview from "../character-preview/character-preview.component";
 import SearchBox from "../search-box/search-box.component";
 
-const CharacterOverview = ({ listCharacters, searchCharacters }) => {
+const CharacterOverview = ({
+  listCharacters,
+  searchCharactersField,
+  searchCharacter,
+}) => {
   const characterFilter = listCharacters.map((list) =>
     list.characters.filter((character) =>
-      character.name.toLowerCase().includes(searchCharacters.toLowerCase())
+      character.name.toLowerCase().includes(searchCharactersField.toLowerCase())
     )
   );
   const conditionCharacterFilter = characterFilter.reduce(
@@ -22,13 +27,17 @@ const CharacterOverview = ({ listCharacters, searchCharacters }) => {
   );
   return (
     <div className="character-overview">
-      <SearchBox />
+      <SearchBox
+        placeholderText="Search Character..."
+        searchCharacter={searchCharacter}
+        titleText="Characters Genshin Impact"
+      />
       {conditionCharacterFilter ? (
         listCharacters.map(({ id, ...otherCollectionProps }) => (
           <CharacterPreview key={id} {...otherCollectionProps} />
         ))
       ) : (
-        <h2 className='not-found'>Character Not Found</h2>
+        <h2 className="not-found">Character Not Found</h2>
       )}
     </div>
   );
@@ -36,7 +45,11 @@ const CharacterOverview = ({ listCharacters, searchCharacters }) => {
 
 const mapStateToProps = createStructuredSelector({
   listCharacters: selectCharacters,
-  searchCharacters: selectSearchFilterCharacter,
+  searchCharactersField: selectSearchFilterCharacter,
 });
 
-export default connect(mapStateToProps)(CharacterOverview);
+const mapDispatchToProps = (dispatch) => ({
+  searchCharacter: (item) => dispatch(searchFilterCharacter(item.target.value)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CharacterOverview);

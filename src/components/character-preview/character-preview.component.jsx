@@ -19,9 +19,9 @@ const CharacterPreview = ({
   return (
     <div className="character-preview">
       {filterCharacter.length ? (
-        <div className="character-preview-container">
+        <div className={`${title} character-preview-container`}>
           <CharacterTitlePreview title={title} imgSrc={visionImgSrc} />
-          <div className={`${title} character-item-preview`}>
+          <div className="character-item-preview">
             {filterCharacter.map((item) => (
               <CharacterItem key={item.id} character={item} />
             ))}

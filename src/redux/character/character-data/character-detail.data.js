@@ -3,6 +3,31 @@ const Character_Detail = {
     id: 1,
     name: "Traveler",
     imgSrc: "/assets/character/traveler-anemo.png",
+    vision: "Anemo",
+    rarity: 5,
+    rating: "C",
+    weapon: "Sword",
+    character_type: "Support",
+    constellation: [],
+    build: {
+        title_build: "Anemo Support Build",
+        description: "",
+        weapon_build: [
+          {
+            id: "WP0001",
+            weapon_name: "Skyward Blade",
+            description: "CRIT Rate increased by 4%. Gains Skypiercing Might upon using an Elemental Burst:Increases Movement SPD by 10%, increases ATK SPD by 10%, and increases the DMG of Normal and Charged Attack hits by 20% for 12s.",
+          },
+          {
+
+          },
+        ],
+        artifact_build: [],
+    },
+    skill_talent: [],
+    ascension : [],
+    passive: [],
+    best_team: [],
   },
   jean: {
     id: 2,
