@@ -20,7 +20,8 @@
     padding: 5px;
   }
 
-  .weapon-name-container {
+  .weapon-name-container,
+  .weapon-rarity-container {
     display: flex;
     flex-direction: column;
     align-self: center;
