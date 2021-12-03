@@ -14,6 +14,11 @@ const weaponReducer = (state = INITIAL_STATE, action) => {
         ...state,
         searchWeapon: action.payload,
       };
+    case WeaponActionTypes.CLEAR_SEARCH_WEAPON:
+      return {
+        ...state,
+        searchWeapon: "",
+      };
     default:
       return state;
   }

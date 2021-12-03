@@ -16,6 +16,11 @@ const characterReducer = (state = INITIAL_STATE, action) => {
         ...state,
         searchCharacter: action.payload,
       };
+    case CharacterActionTypes.CLEAR_SEARCH_CHARACTER:
+      return {
+        ...state,
+        searchCharacter: "",
+      };
     default:
       return state;
   }

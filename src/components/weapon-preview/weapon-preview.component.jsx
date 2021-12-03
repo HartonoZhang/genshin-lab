@@ -12,7 +12,7 @@ import TextValidationFound from "../text-validation-found/text-validation-found.
 
 const WeaponPreview = ({ listWeapons, searchWeaponsField }) => {
   const filterWeapon = listWeapons.filter((character) =>
-    character.name.toLowerCase().includes(searchWeaponsField.toLowerCase())
+    character.name.toLowerCase().includes(searchWeaponsField?.toLowerCase())
   );
   return (
     <div className="weapon-preview">

@@ -1,3 +1,4 @@
 export const WeaponActionTypes = {
   SEARCH_WEAPON: "SEARCH_WEAPON",
+  CLEAR_SEARCH_WEAPON: "CLEAR_SEARCH_WEAPON",
 };

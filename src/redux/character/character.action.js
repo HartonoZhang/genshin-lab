@@ -4,3 +4,7 @@ export const searchFilterCharacter = (item) => ({
   type: CharacterActionTypes.SEARCH_CHARACTER,
   payload: item,
 }); 
+
+export const clearSearchFilterCharacter = () => ({
+  type: CharacterActionTypes.CLEAR_SEARCH_CHARACTER,
+});
