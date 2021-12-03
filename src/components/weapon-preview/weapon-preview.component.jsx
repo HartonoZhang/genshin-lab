@@ -14,6 +14,7 @@ const WeaponPreview = ({ listWeapons, searchWeaponsField }) => {
   const filterWeapon = listWeapons.filter((character) =>
     character.name.toLowerCase().includes(searchWeaponsField?.toLowerCase())
   );
+  let incrementTable = 0;
   return (
     <div className="weapon-preview">
       <div className="header-preview-container">
@@ -24,7 +25,7 @@ const WeaponPreview = ({ listWeapons, searchWeaponsField }) => {
         <div className="skill-weapon">Skill</div>
       </div>
       {filterWeapon.length ? filterWeapon.map((item) => (
-        <WeaponItem key={item.id} weapon={item} />
+        <WeaponItem key={item.id} weapon={item} styleLength={incrementTable++} />
       )): (
         <TextValidationFound textField="Weapon Not Found" />
       )}

@@ -1,13 +1,38 @@
-.weapon-item{
+.weapon-item {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 23% 10% 10% 12% 45%;
   color: rgb(212, 198, 198);
   padding: 8px;
   border: 1px solid #bea4a4;
   font-size: 14px;
 
+  &.table0 {
+    background-color: rgb(61, 56, 56);
+  }
+
+  &.table1 {
+    background-color: rgb(48, 44, 44);
+  }
+
   div {
     display: grid;
     align-items: center;
+    padding: 5px;
+  }
+
+  .weapon-name-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .weapon-img {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+    }
+
+    .weapon-name {
+      margin-top: 4px;
+    }
   }
 }

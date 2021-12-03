@@ -1,15 +1,23 @@
 import "./weapon-item.style.scss";
 
-const WeaponItem = ({ weapon }) => {
-  const {name, type, rarity, bonus_effect, skill} = weapon;
+const WeaponItem = ({ weapon, styleLength }) => {
+  const { name, type, rarity, bonus_effect, skill, imgSrc } = weapon;
   return (
-  <div className="weapon-item">
-    <div>{name}</div>
-    <div>{type}</div>
-    <div>{rarity}</div>
-    <div>{bonus_effect}</div>
-    <div>{skill}</div>
-  </div>
-)};
+    <div className={`table${styleLength % 2} weapon-item`}>
+      <div className='weapon-name-container'>
+        <img
+          className="weapon-img"
+          src={`${process.env.PUBLIC_URL + imgSrc}`}
+          alt="weapon"
+        />
+        <span className='weapon-name'>{name}</span>
+      </div>
+      <div>{type}</div>
+      <div>{rarity}</div>
+      <div>{bonus_effect}</div>
+      <div>{skill}</div>
+    </div>
+  );
+};
 
 export default WeaponItem;

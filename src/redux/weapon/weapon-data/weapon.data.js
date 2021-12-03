@@ -2,7 +2,7 @@ const Weapon_Data = [
   {
     id: "WP0001",
     name: "Summit Shaper",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/summit_shaper.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "ATK",
@@ -12,7 +12,7 @@ const Weapon_Data = [
   {
     id: "WP0002",
     name: "Skyward Blade",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/skyward_blade.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "Energy Recharge",
@@ -22,7 +22,7 @@ const Weapon_Data = [
   {
     id: "WP0003",
     name: "Primordial Jade Cutter",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/primordial_jade_cutter.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "CRIT Rate",
@@ -32,7 +32,7 @@ const Weapon_Data = [
   {
     id: "WP0004",
     name: "Mistsplitter Reforged",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/mistsplitter_reforged.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "CRIT DMG",
@@ -42,7 +42,7 @@ const Weapon_Data = [
   {
     id: "WP0005",
     name: "Freedom-Sworn",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/freedom_sworn.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "Elemental Mastery",
@@ -52,7 +52,7 @@ const Weapon_Data = [
   {
     id: "WP0006",
     name: "Aquila Favonia",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/aquila_favonia.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "Physical DMG Bonus",
@@ -62,7 +62,7 @@ const Weapon_Data = [
   {
     id: "WP0007",
     name: "The Flute",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/the_flute.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "ATK",
@@ -72,7 +72,7 @@ const Weapon_Data = [
   {
     id: "WP0008",
     name: "The Black Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/the_black_sword.png",
     type: "Sword",
     rarity: 5,
     bonus_effect: "CRIT Rate",
@@ -82,7 +82,7 @@ const Weapon_Data = [
   {
     id: "WP0009",
     name: "The Alley Flash",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/the_alley_flash.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "Elemental Mastery",
@@ -92,7 +92,7 @@ const Weapon_Data = [
   {
     id: "WP0010",
     name: "Sword of Descension",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/sword_of_descension.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "ATK",
@@ -102,7 +102,7 @@ const Weapon_Data = [
   {
     id: "WP0011",
     name: "Sacrificial Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/sacrificial_sword.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "Energy Recharge",
@@ -112,7 +112,7 @@ const Weapon_Data = [
   {
     id: "WP0012",
     name: "Royal Longsword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/royal_longsword.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "ATK",
@@ -122,7 +122,7 @@ const Weapon_Data = [
   {
     id: "WP0013",
     name: "Prototype Rancour",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/prototype_rancour.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "Physical DMG Bonus",
@@ -132,7 +132,7 @@ const Weapon_Data = [
   {
     id: "WP0014",
     name: "Lion's Roar",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/lions_roar.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "ATK",
@@ -142,7 +142,7 @@ const Weapon_Data = [
   {
     id: "WP0015",
     name: "Iron Sting",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/iron_sting.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "Elemental Mastery",
@@ -152,7 +152,7 @@ const Weapon_Data = [
   {
     id: "WP0016",
     name: "Festering Desire",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/festering_desire.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "Energy Recharge",
@@ -162,7 +162,7 @@ const Weapon_Data = [
   {
     id: "WP0017",
     name: "Favonius Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/favonius_sword.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "Energy Recharge",
@@ -172,7 +172,7 @@ const Weapon_Data = [
   {
     id: "WP0018",
     name: "Cinnabar Spindle",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/cinnabar_spindle.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "DEF",
@@ -182,7 +182,7 @@ const Weapon_Data = [
   {
     id: "WP0019",
     name: "Blackcliff Longsword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/blackcliff_longsword.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "CRIT DMG",
@@ -192,7 +192,7 @@ const Weapon_Data = [
   {
     id: "WP0020",
     name: "Amenoma Kageuchi",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/amenoma_kageuchi.png",
     type: "Sword",
     rarity: 4,
     bonus_effect: "ATK",
@@ -202,7 +202,7 @@ const Weapon_Data = [
   {
     id: "WP0021",
     name: "Traveler's Handy Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/travelers_handy_sword.png",
     type: "Sword",
     rarity: 3,
     bonus_effect: "DEF",
@@ -212,7 +212,7 @@ const Weapon_Data = [
   {
     id: "WP0022",
     name: "Skyrider Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/skyrider_sword.png",
     type: "Sword",
     rarity: 3,
     bonus_effect: "Energy Recharge",
@@ -222,7 +222,7 @@ const Weapon_Data = [
   {
     id: "WP0023",
     name: "Harbinger of Dawn",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/harbinger_of_dawn.png",
     type: "Sword",
     rarity: 3,
     bonus_effect: "CRIT DMG",
@@ -231,7 +231,7 @@ const Weapon_Data = [
   {
     id: "WP0024",
     name: "Fillet Blade",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/fillet_blade.png",
     type: "Sword",
     rarity: 3,
     bonus_effect: "ATK",
@@ -241,7 +241,7 @@ const Weapon_Data = [
   {
     id: "WP0025",
     name: "Dark Iron Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/dark_iron_sword.png",
     type: "Sword",
     rarity: 3,
     bonus_effect: "Elemental Mastery",
@@ -251,7 +251,7 @@ const Weapon_Data = [
   {
     id: "WP0026",
     name: "Cool Steel",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/cool_steel.png",
     type: "Sword",
     rarity: 3,
     bonus_effect: "ATK",
@@ -261,7 +261,7 @@ const Weapon_Data = [
   {
     id: "WP0027",
     name: "Silver Sword",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/silver_sword.png",
     type: "Sword",
     rarity: 2,
     bonus_effect: "-",
@@ -270,7 +270,7 @@ const Weapon_Data = [
   {
     id: "WP0028",
     name: "Dull Blade",
-    imgSrc: "",
+    imgSrc: "/assets/weapon/dull_blade.png",
     type: "Sword",
     rarity: 1,
     bonus_effect: "-",
