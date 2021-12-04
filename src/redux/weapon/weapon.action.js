@@ -8,3 +8,8 @@ export const searchFilterWeapon = (item) => ({
 export const clearSearchFilterWeapon = () => ({
   type: WeaponActionTypes.CLEAR_SEARCH_WEAPON,
 }); 
+
+export const filterTypeWeapon = (item) => ({
+  type: WeaponActionTypes.FILTER_TYPE_WEAPON,
+  payload: item,
+}); 

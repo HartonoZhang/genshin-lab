@@ -14,7 +14,7 @@ export const selectListCharacterDetail = createSelector(
 
 export const selectSearchFilterCharacter = createSelector(
   [selectCharacter],
-  (character) => character.searchCharacter
+  (character) => character.searchCharacter 
 );
 
 export const selectCharacters = createSelector(

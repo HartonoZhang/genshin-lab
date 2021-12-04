@@ -1,9 +1,9 @@
 import "./weapon-item.style.scss";
 
-const WeaponItem = ({ weapon, styleLength }) => {
+const WeaponItem = ({ weapon }) => {
   const { name, type, rarity, bonus_effect, skill, imgSrc } = weapon;
   return (
-    <div className={`table${styleLength % 2} weapon-item`}>
+    <div className="weapon-item">
       <div className="weapon-name-container">
         <img
           className="weapon-img"

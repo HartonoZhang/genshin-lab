@@ -27,9 +27,7 @@ const CharacterPreview = ({
             ))}
           </div>
         </div>
-      ) : (
-        ""
-      )}
+      ) : ""}
     </div>
   );
 };

@@ -11,3 +11,13 @@ export const selectSearchWeapon = createSelector(
   [selectWeapon],
   (weapon) => weapon.searchWeapon
 );
+
+export const selectTypeWeapon = createSelector(
+  [selectWeapon],
+  (weapon) => weapon.typeWeapon
+);
+
+export const selectWeapons = createSelector(
+  [selectListWeapon], 
+  (listWeapon) => Object.keys(listWeapon).map((key) => listWeapon[key])
+);
