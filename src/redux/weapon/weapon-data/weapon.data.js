@@ -1,7 +1,7 @@
 const Weapon_Data = {
   sword: {
     id: 1,
-    type_sword: "sword",
+    type_weapon: "sword",
     weapons: [
       {
         id: "WP0001",
@@ -283,7 +283,7 @@ const Weapon_Data = {
   },
   polearm: {
     id: 2,
-    type_sword: "polearm",
+    type_weapon: "polearm",
     weapons: [
       {
         id: "WP0029",
@@ -495,7 +495,7 @@ const Weapon_Data = {
   },
   claymore: {
     id: 3,
-    type_sword: "claymore",
+    type_weapon: "claymore",
     weapons: [
       {
         id: "WP0050",
@@ -758,7 +758,7 @@ const Weapon_Data = {
   },
   catalyst: {
     id: 4,
-    type_sword: "catalyst",
+    type_weapon: "catalyst",
     weapons: [
       {
         id: "WP0076",
@@ -1011,7 +1011,7 @@ const Weapon_Data = {
   },
   bow: {
     id: 5,
-    type_sword: "bow",
+    type_weapon: "bow",
     weapons: [
       {
         id: "WP0101",

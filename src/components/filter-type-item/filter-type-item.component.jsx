@@ -9,7 +9,7 @@ import "./filter-type-item.style.scss";
 const FilterTypeItem = ({ item, filterWeapon, typeWeaponCurrent }) => {
   const { typeWeapon, imageUrl } = item;
   const active = typeWeaponCurrent.find(
-    (check) => check.type_sword === typeWeapon
+    (check) => check.type_weapon === typeWeapon
   );
   return (
     <div
