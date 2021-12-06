@@ -20,6 +20,7 @@ export const WeaponTextColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
+  margin: 0 auto;
 `;
 
 export const WeaponName = styled.span`
@@ -29,5 +30,4 @@ export const WeaponName = styled.span`
 export const WeaponImage = styled.img`
   width: 110px;
   height: 110px;
-  margin: 0 auto;
 `;

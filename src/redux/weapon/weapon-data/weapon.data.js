@@ -1016,7 +1016,7 @@ const Weapon_Data = {
       {
         id: "WP0101",
         name: "Thundering Pulse",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/thundering_pulse.png",
         type: "Bow",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "CRIT DMG",
@@ -1026,7 +1026,7 @@ const Weapon_Data = {
       {
         id: "WP0102",
         name: "Skyward Harp",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/skyward_harp.png",
         type: "Bow",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "CRIT Rate",
@@ -1036,7 +1036,7 @@ const Weapon_Data = {
       {
         id: "WP0103",
         name: "Polar Star",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/polar_star.png",
         type: "Bow",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "CRIT Rate",
@@ -1046,7 +1046,7 @@ const Weapon_Data = {
       {
         id: "WP0104",
         name: "Elegy for the End",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/elegy_for_the_end.png",
         type: "Bow",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "Energy Recharge",
@@ -1056,7 +1056,7 @@ const Weapon_Data = {
       {
         id: "WP0105",
         name: "Amos' Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/amos_bow.png",
         type: "Bow",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "ATK",
@@ -1066,7 +1066,7 @@ const Weapon_Data = {
       {
         id: "WP0106",
         name: "Windblume Ode",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/windblume_ode.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Elemental Mastery",
@@ -1076,7 +1076,7 @@ const Weapon_Data = {
       {
         id: "WP0107",
         name: "The Viridescent Hunt",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/the_viridescent_hunt.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "CRIT Rate",
@@ -1086,7 +1086,7 @@ const Weapon_Data = {
       {
         id: "WP0108",
         name: "The Stringless",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/the_stringless.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Elemental Mastery",
@@ -1095,7 +1095,7 @@ const Weapon_Data = {
       {
         id: "WP0109",
         name: "Sacrificial Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/sacrificial_bow.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Energy Recharge",
@@ -1105,7 +1105,7 @@ const Weapon_Data = {
       {
         id: "WP0110",
         name: "Rust",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/rust.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -1115,7 +1115,7 @@ const Weapon_Data = {
       {
         id: "WP0111",
         name: "Royal Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/royal_bow.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -1125,7 +1125,7 @@ const Weapon_Data = {
       {
         id: "WP0112",
         name: "Prototype Crescent",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/prototype_crescent.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -1135,7 +1135,7 @@ const Weapon_Data = {
       {
         id: "WP0113",
         name: "Predator",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/the_predator.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -1145,7 +1145,7 @@ const Weapon_Data = {
       {
         id: "WP0114",
         name: "Mitternachts Waltz",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/mitternachts_waltz.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Physical DMG Bonus",
@@ -1155,7 +1155,7 @@ const Weapon_Data = {
       {
         id: "WP0115",
         name: "Hamayumi",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/hamayumi.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -1165,7 +1165,7 @@ const Weapon_Data = {
       {
         id: "WP0116",
         name: "Favonius Warbow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/favonius_warbow.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Energy Recharge",
@@ -1175,7 +1175,7 @@ const Weapon_Data = {
       {
         id: "WP0117",
         name: "Compound Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/compound_bow.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Physical DMG Bonus",
@@ -1185,7 +1185,7 @@ const Weapon_Data = {
       {
         id: "WP0118",
         name: "Blackcliff Warbow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/blackcliff_warbow.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "CRIT DMG",
@@ -1195,7 +1195,7 @@ const Weapon_Data = {
       {
         id: "WP0119",
         name: "Alley Hunter",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/alley_hunter.png",
         type: "Bow",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "CRIT Rate",
@@ -1205,7 +1205,7 @@ const Weapon_Data = {
       {
         id: "WP0120",
         name: "Slingshot",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/slingshot.png",
         type: "Bow",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "CRIT Rate",
@@ -1215,7 +1215,7 @@ const Weapon_Data = {
       {
         id: "WP0121",
         name: "Sharpshooter's Oath",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/sharpshooters_oath.png",
         type: "Bow",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "CRIT DMG",
@@ -1224,7 +1224,7 @@ const Weapon_Data = {
       {
         id: "WP0122",
         name: "Recurve Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/recurve_bow.png",
         type: "Bow",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "HP",
@@ -1233,7 +1233,7 @@ const Weapon_Data = {
       {
         id: "WP0123",
         name: "Raven Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/raven_bow.png",
         type: "Bow",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "Elemental Mastery",
@@ -1243,7 +1243,7 @@ const Weapon_Data = {
       {
         id: "WP0124",
         name: "Messenger",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/messenger.png",
         type: "Bow",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "CRIT DMG",
@@ -1253,7 +1253,7 @@ const Weapon_Data = {
       {
         id: "WP0125",
         name: "Ebony Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/ebony_bow.png",
         type: "Bow",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "ATK",
@@ -1262,7 +1262,7 @@ const Weapon_Data = {
       {
         id: "WP0126",
         name: "Seasoned Hunter's Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/seasoned_hunters_bow.png",
         type: "Bow",
         rarity: "/assets/icon/2star.png",
         bonus_effect: "-",
@@ -1271,7 +1271,7 @@ const Weapon_Data = {
       {
         id: "WP0127",
         name: "Hunter's Bow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/weapon_hunters_bow.png",
         type: "Bow",
         rarity: "/assets/icon/1star.png",
         bonus_effect: "-",
