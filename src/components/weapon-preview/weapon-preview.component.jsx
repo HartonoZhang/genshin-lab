@@ -3,7 +3,8 @@ import { createStructuredSelector } from "reselect";
 
 import { selectSearchWeapon } from "../../redux/weapon/weapon.selector";
 
-import "./weapon-preview.style.scss";
+import { WeaponPreviewContainer } from "./weapon-preview.style";
+
 import WeaponItem from "../weapon-item/weapon-item.component";
 
 const WeaponPreview = ({ searchWeaponsField, weapons }) => {
@@ -11,11 +12,11 @@ const WeaponPreview = ({ searchWeaponsField, weapons }) => {
     weapon.name.toLowerCase().includes(searchWeaponsField.toLowerCase())
   );
   return (
-    <div className="weapon-preview">
+    <WeaponPreviewContainer>
       {filterWeapon.length
         ? filterWeapon.map((item) => <WeaponItem key={item.id} weapon={item} />)
         : ""}
-    </div>
+    </WeaponPreviewContainer>
   );
 };
 

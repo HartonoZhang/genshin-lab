@@ -1,7 +1,6 @@
 import { Route } from "react-router-dom";
 import { Component } from "react";
 
-import "./characters.style.scss";
 import CharacterDetailPage from "../character-detail/character-detail.component";
 
 // import {

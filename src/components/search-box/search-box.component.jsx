@@ -1,17 +1,21 @@
-import "./search-box.style.scss";
+import {
+  SearchBoxContainer,
+  TitleSearch,
+  SearchInputContainer,
+  SearchBoxInputContainer,
+} from "./search-box.style";
 
 const SearchBox = ({ searchCharacter, placeholderText, titleText }) => (
-  <div className="search-box">
-    <p className="title-search">{titleText}</p>
-    <div className="search-container">
-      <input
-        className="search-box-container"
+  <SearchBoxContainer>
+    <TitleSearch>{titleText}</TitleSearch>
+    <SearchBoxInputContainer>
+      <SearchInputContainer
         type="search"
         placeholder={placeholderText}
         onChange={searchCharacter}
       />
-    </div>
-  </div>
+    </SearchBoxInputContainer>
+  </SearchBoxContainer>
 );
 
 export default SearchBox;

@@ -1,13 +1,13 @@
-import "./header-overview-weapon.style.scss";
+import { HeaderOverviewWeaponContainer } from "./header-overview-weapon.style";
 
 const HeaderOverviewWeapon = () => (
-  <div className="header-overview-weapon">
-    <div className="name-weapon">Weapon</div>
-    <div className="type-weapon">Type</div>
-    <div className="rarity-weapon">Rarity</div>
-    <div className="bonus-weapon">Bonus Effect</div>
-    <div className="skill-weapon">Skill</div>
-  </div>
+  <HeaderOverviewWeaponContainer>
+    <div>Weapon</div>
+    <div>Type</div>
+    <div>Rarity</div>
+    <div>Bonus Effect</div>
+    <div>Skill</div>
+  </HeaderOverviewWeaponContainer>
 );
 
 export default HeaderOverviewWeapon;

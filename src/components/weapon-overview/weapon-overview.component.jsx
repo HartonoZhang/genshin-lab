@@ -8,7 +8,8 @@ import {
   selectTypeWeapon,
 } from "../../redux/weapon/weapon.selector";
 
-import "./weapon-overview.style.scss";
+import { WeaponOverviewContainer } from "./weapon-overview.style";
+
 import SearchBox from "../search-box/search-box.component";
 import WeaponPreview from "../weapon-preview/weapon-preview.component";
 import TextValidationFound from "../text-validation-found/text-validation-found.component";
@@ -31,7 +32,7 @@ const WeaponOverview = ({
     0
   );
   return (
-    <div className="weapon-overview">
+    <WeaponOverviewContainer>
       <SearchBox
         placeholderText="Search Weapon..."
         searchCharacter={searchWeapon}
@@ -46,7 +47,7 @@ const WeaponOverview = ({
       ) : (
         <TextValidationFound textField="Weapon Not Found" />
       )}
-    </div>
+    </WeaponOverviewContainer>
   );
 };
 

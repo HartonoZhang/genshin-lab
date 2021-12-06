@@ -1,10 +1,10 @@
-import './homepage.style.scss';
+import { HomepageContainer } from './homepage.style';
 import CharacterOverview from '../../components/character-overview/character-overview.component';
 
 const HomePage = () => (
-  <div className='home-page'>
+  <HomepageContainer>
     <CharacterOverview />
-  </div>
+  </HomepageContainer>
 );
 
 export default HomePage;

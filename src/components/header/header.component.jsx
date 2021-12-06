@@ -1,30 +1,29 @@
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { clearSearchFilterWeapon } from "../../redux/weapon/weapon.action";
 import { clearSearchFilterCharacter } from "../../redux/character/character.action";
 
-import "./header.style.scss";
+import { HeaderContainer, HeaderTopContainer, LogoContainer, LogoText, OptionContainer, OptionsContainer } from "./header.style";
 
 const Header = ({ clearSearchWeapon, clearSearchCharacter }) => (
-  <div className="header">
-    <div className="header-container">
-      <Link className="logo-container" to="/">
-        <span className="logo-text">GENSHIN LAB</span>
-      </Link>
-      <div className="options">
-        <Link className="option" to="/" onClick={clearSearchCharacter}>
+  <HeaderContainer>
+    <HeaderTopContainer>
+      <LogoContainer to="/">
+        <LogoText>GENSHIN LAB</LogoText>
+      </LogoContainer>
+      <OptionsContainer>
+        <OptionContainer to="/" onClick={clearSearchCharacter}>
           CHARACTERS
-        </Link>
-        <Link className="option" to="/artifacts">
+        </OptionContainer>
+        <OptionContainer to="/artifacts">
           ARTIFACTS
-        </Link>
-        <Link className="option" to="/weapons" onClick={clearSearchWeapon}>
+        </OptionContainer>
+        <OptionContainer to="/weapons" onClick={clearSearchWeapon}>
           WEAPONS
-        </Link>
-      </div>
-    </div>
-  </div>
+        </OptionContainer>
+      </OptionsContainer>
+    </HeaderTopContainer>
+  </HeaderContainer>
 );
 
 const mapDispatchToProps = (dispatch) => ({

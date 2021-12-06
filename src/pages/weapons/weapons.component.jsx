@@ -1,9 +1,9 @@
-import './weapons.style.scss';
-import WeaponOverview from '../../components/weapon-overview/weapon-overview.component';
+import { WeaponPageContainer } from "./weapon.style";
+import WeaponOverview from "../../components/weapon-overview/weapon-overview.component";
 const WeaponPage = () => (
-  <div className='weapon-page'>
+  <WeaponPageContainer>
     <WeaponOverview />
-  </div>
-)
+  </WeaponPageContainer>
+);
 
 export default WeaponPage;

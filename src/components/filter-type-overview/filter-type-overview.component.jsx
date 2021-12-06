@@ -1,12 +1,13 @@
-import './filter-type-overview.style.scss';
 import FilterTypeItem from '../filter-type-item/filter-type-item.component';
 
+import { FilterTypeOverviewContainer } from './filter-type-overview.style';
+
 const FilterTypeOverview = ({ typeFilter }) => (
-  <div className='filter-type'>
+  <FilterTypeOverviewContainer>
     {
       typeFilter.map(item => (<FilterTypeItem key={item.id} item={item} />))
     }
-  </div>
+  </FilterTypeOverviewContainer>
 )
 
 export default FilterTypeOverview;

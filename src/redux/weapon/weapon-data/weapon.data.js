@@ -763,7 +763,7 @@ const Weapon_Data = {
       {
         id: "WP0076",
         name: "Skyward Atlas",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/skyward_atlas.png",
         type: "Catalyst",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "ATK",
@@ -773,7 +773,7 @@ const Weapon_Data = {
       {
         id: "WP0077",
         name: "Lost Prayer to the Sacred Winds",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/lost_prayer_to_the_sacred_winds.png",
         type: "Catalyst",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "CRIT Rate",
@@ -783,7 +783,7 @@ const Weapon_Data = {
       {
         id: "WP0078",
         name: "Memory of Dust",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/memory_of_dust.png",
         type: "Catalyst",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "ATK",
@@ -793,7 +793,7 @@ const Weapon_Data = {
       {
         id: "WP0079",
         name: "Everlasting Moonglow",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/everlasting_moonglow.png",
         type: "Catalyst",
         rarity: "/assets/icon/5star.png",
         bonus_effect: "HP",
@@ -803,7 +803,7 @@ const Weapon_Data = {
       {
         id: "WP0080",
         name: "Wine and Song",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/wine_and_song.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Energy Recharge",
@@ -813,7 +813,7 @@ const Weapon_Data = {
       {
         id: "WP0081",
         name: "The Widsith",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/the_widsith.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "CRIT DMG",
@@ -823,7 +823,7 @@ const Weapon_Data = {
       {
         id: "WP0082",
         name: "Solar Pearl",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/solar_pearl.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "CRIT Rate",
@@ -833,7 +833,7 @@ const Weapon_Data = {
       {
         id: "WP0083",
         name: "Sacrificial Fragments",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/sacrificial_fragments.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Elemental Mastery",
@@ -843,7 +843,7 @@ const Weapon_Data = {
       {
         id: "WP0084",
         name: "Royal Grimoire",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/royal_grimoire.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -853,7 +853,7 @@ const Weapon_Data = {
       {
         id: "WP0085",
         name: "Prototype Amber",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/prototype_amber.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "HP",
@@ -863,7 +863,7 @@ const Weapon_Data = {
       {
         id: "WP0086",
         name: "Mappa Mare",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/mappa_mare.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Elemental Mastery",
@@ -873,7 +873,7 @@ const Weapon_Data = {
       {
         id: "WP0087",
         name: "Hakushin Ring",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/hakushin_ring.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Energy Recharge",
@@ -883,7 +883,7 @@ const Weapon_Data = {
       {
         id: "WP0088",
         name: "Frostbearer",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/frostbearer.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -893,7 +893,7 @@ const Weapon_Data = {
       {
         id: "WP0089",
         name: "Favonius Codex",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/favonius_codex.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "Energy Recharge",
@@ -903,7 +903,7 @@ const Weapon_Data = {
       {
         id: "WP0090",
         name: "Eye of Perception",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/eye_of_perception.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -913,7 +913,7 @@ const Weapon_Data = {
       {
         id: "WP0091",
         name: "Dodoco Tales",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/dodoco_tales.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "ATK",
@@ -923,7 +923,7 @@ const Weapon_Data = {
       {
         id: "WP0092",
         name: "Blackcliff Amulet",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/blackcliff_agate.png",
         type: "Catalyst",
         rarity: "/assets/icon/4star.png",
         bonus_effect: "CRIT DMG",
@@ -933,7 +933,7 @@ const Weapon_Data = {
       {
         id: "WP0093",
         name: "Twin Nephrite",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/twin_nephrite.png",
         type: "Catalyst",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "CRIT Rate",
@@ -943,7 +943,7 @@ const Weapon_Data = {
       {
         id: "WP0094",
         name: "Thrilling Tales of Dragon Slayers",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/thrilling_tales_of_dragon_slayers.png",
         type: "Catalyst",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "HP",
@@ -953,7 +953,7 @@ const Weapon_Data = {
       {
         id: "WP0095",
         name: "Otherworldly Story",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/otherworldly_story.png",
         type: "Catalyst",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "Energy Recharge",
@@ -962,7 +962,7 @@ const Weapon_Data = {
       {
         id: "WP0096",
         name: "Magic Guide",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/magic_guide.png",
         type: "Catalyst",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "Elemental Mastery",
@@ -972,7 +972,7 @@ const Weapon_Data = {
       {
         id: "WP0097",
         name: "Emerald Orb",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/emerald_orb.png",
         type: "Catalyst",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "Elemental Mastery",
@@ -982,7 +982,7 @@ const Weapon_Data = {
       {
         id: "WP0098",
         name: "Amber Catalyst",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/amber_catalyst.png",
         type: "Catalyst",
         rarity: "/assets/icon/3star.png",
         bonus_effect: "Elemental Mastery",
@@ -992,7 +992,7 @@ const Weapon_Data = {
       {
         id: "WP0099",
         name: "Pocket Grimoire",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/pocket_grimoire.png",
         type: "Catalyst",
         rarity: "/assets/icon/2star.png",
         bonus_effect: "-",
@@ -1001,7 +1001,7 @@ const Weapon_Data = {
       {
         id: "WP0100",
         name: "Apprentice's Notes",
-        imgSrc: "",
+        imgSrc: "/assets/weapon/apprentices_notes.png",
         type: "Catalyst",
         rarity: "/assets/icon/1star.png",
         bonus_effect: "-",

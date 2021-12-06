@@ -2,7 +2,6 @@ import { connect } from "react-redux";
 
 import { selectCharacterDetail } from "../../redux/character/character.selector";
 
-import "./character-detail.style.scss";
 const CharacterDetailPage = ({ character }) => {
   const {name} = character;
   return (

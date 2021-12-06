@@ -3,7 +3,8 @@ import { createStructuredSelector } from "reselect";
 
 import { selectSearchFilterCharacter } from "../../redux/character/character.selector";
 
-import "./character-preview.style.scss";
+import { CharacterPreviewContainer, CharacterPreviewHeaderContainer, CharacterPreviewItemContainer } from "./character-preview.style";
+
 import CharacterItem from "../character-item/character-item.component";
 import CharacterTitlePreview from "../character-title-preview/character-title-preview.component";
 
@@ -17,18 +18,18 @@ const CharacterPreview = ({
     character.name.toLowerCase().includes(searchFieldCharacter.toLowerCase())
   );
   return (
-    <div className="character-preview">
+    <CharacterPreviewContainer>
       {filterCharacter.length ? (
-        <div className={`${title} character-preview-container`}>
+        <CharacterPreviewHeaderContainer className={title}>
           <CharacterTitlePreview title={title} imgSrc={visionImgSrc} />
-          <div className="character-item-preview">
+          <CharacterPreviewItemContainer>
             {filterCharacter.map((item) => (
               <CharacterItem key={item.id} character={item} />
             ))}
-          </div>
-        </div>
+          </CharacterPreviewItemContainer>
+        </CharacterPreviewHeaderContainer>
       ) : ""}
-    </div>
+    </CharacterPreviewContainer>
   );
 };
 

@@ -1,9 +1,9 @@
-import './footer.style.scss';
+import { FooterContainer, FooterText } from "./footer.style";
 
 const Footer = () => (
-  <div className='footer'>
-    <p className='footer-text'>Just For Fun &#169; 2021-2022 Hartono Zhang</p>
-  </div>
+  <FooterContainer>
+    <FooterText>Just For Fun &#169; 2021-2022 Hartono Zhang</FooterText>
+  </FooterContainer>
 )
 
 export default Footer;

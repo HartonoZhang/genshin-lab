@@ -1,9 +1,9 @@
-import './text-validation-found.style.scss';
+import { TextValidationContainer } from "./text-validation-found.style";
 
 const TextValidationFound = ({ textField }) => (
-  <div className="text-validation-found">
+  <TextValidationContainer>
     <h2>{textField}</h2>
-  </div>
+  </TextValidationContainer>
 );
 
 export default TextValidationFound;

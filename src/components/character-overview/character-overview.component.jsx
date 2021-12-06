@@ -7,7 +7,8 @@ import {
 } from "../../redux/character/character.selector";
 import { searchFilterCharacter } from "../../redux/character/character.action";
 
-import "./character-overview.style.scss";
+import { OverviewContainer } from "./character-overview.style";
+
 import CharacterPreview from "../character-preview/character-preview.component";
 import SearchBox from "../search-box/search-box.component";
 import TextValidationFound from "../text-validation-found/text-validation-found.component";
@@ -27,7 +28,7 @@ const CharacterOverview = ({
     0
   );
   return (
-    <div className="character-overview">
+    <OverviewContainer>
       <SearchBox
         placeholderText="Search Character..."
         searchCharacter={searchCharacter}
@@ -40,7 +41,7 @@ const CharacterOverview = ({
       ) : (
         <TextValidationFound textField="Character Not Found" />
       )}
-    </div>
+    </OverviewContainer>
   );
 };
 
