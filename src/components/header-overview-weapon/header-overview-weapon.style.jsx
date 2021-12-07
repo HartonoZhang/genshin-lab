@@ -5,8 +5,7 @@ export const HeaderTableWeaponContainer = css`
   grid-template-columns: 23% 10% 10% 12% 45%;
 `;
 
-export const HeaderOverviewWeaponContainer = styled.div`
-  ${HeaderTableWeaponContainer}
+export const HeaderTableDefaultContainer = css`
   width: 100%;
   color: white;
   padding: 6px;
@@ -14,4 +13,9 @@ export const HeaderOverviewWeaponContainer = styled.div`
   font-size: 16px;
   background-color: rgb(27, 23, 23);
   margin-top: 8px;
+`;
+
+export const HeaderOverviewWeaponContainer = styled.div`
+  ${HeaderTableWeaponContainer}
+  ${HeaderTableDefaultContainer}
 `;

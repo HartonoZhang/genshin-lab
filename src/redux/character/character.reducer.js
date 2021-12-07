@@ -5,7 +5,7 @@ import { CharacterActionTypes } from "./character.type";
 
 const INITIAL_STATE = {
   listCharacter: Character_Data,
-  characterDetail: Character_Detail,
+  characterDetail: Character_Detail, 
   searchCharacter: "",
 };
 

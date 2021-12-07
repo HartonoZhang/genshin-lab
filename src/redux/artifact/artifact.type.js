@@ -1,0 +1,4 @@
+export const ArtifactActionTypes = {
+  SEARCH_ARTIFACT: "SEARCH_ARTIFACT",
+  CLEAR_SEARCH_ARTIFACT: "CLEAR_SEARCH_ARTIFACT",
+};

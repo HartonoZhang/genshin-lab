@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { HeaderTableWeaponContainer } from "../header-overview-weapon/header-overview-weapon.style";
+import { HeaderTableArtifactContainer } from "../header-overview-artifact/header-overview-artifact.style";
 
-export const WeaponItemContainer = styled.div`
-  ${HeaderTableWeaponContainer}
+export const ArtifactItemContainer = styled.div`
+  ${HeaderTableArtifactContainer}
   color: rgb(212, 198, 198);
   padding: 8px;
   border: 1px solid #bea4a4;
@@ -14,21 +14,25 @@ export const WeaponItemContainer = styled.div`
     align-items: center;
     padding: 5px;
   }
-`;
+`
 
-export const WeaponTextColumnContainer = styled.div`
+export const ArtifactTextColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
   margin: 0 auto;
 `;
 
-export const WeaponName = styled.span`
+export const ArtifactName = styled.span`
   margin-top: 4px;
 `;
 
-export const WeaponImage = styled.img`
+export const ArtifactImage = styled.img`
   width: 110px;
   height: 110px;
   margin: 0 auto;
+`;
+
+export const SetBonusBold = styled.span`
+  font-weight: bolder;
 `;
