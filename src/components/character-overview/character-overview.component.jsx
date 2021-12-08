@@ -9,6 +9,8 @@ import { searchFilterCharacter } from "../../redux/character/character.action";
 
 import { OverviewContainer } from "./character-overview.style";
 
+import { checkData } from "../hoc/utils-data";
+
 import CharacterPreview from "../character-preview/character-preview.component";
 import SearchBox from "../search-box/search-box.component";
 import TextValidationFound from "../text-validation-found/text-validation-found.component";
@@ -18,15 +20,7 @@ const CharacterOverview = ({
   searchCharactersField,
   searchCharacter,
 }) => {
-  const characterFilter = listCharacters.map((list) =>
-    list.characters.filter((character) =>
-      character.name.toLowerCase().includes(searchCharactersField.toLowerCase())
-    )
-  );
-  const conditionCharacterFilter = characterFilter.reduce(
-    (accumalatedLength, current) => accumalatedLength + current.length,
-    0
-  );
+  const checkCondition = checkData(listCharacters, searchCharactersField, 'characters');
   return (
     <OverviewContainer>
       <SearchBox
@@ -34,7 +28,7 @@ const CharacterOverview = ({
         searchCharacter={searchCharacter}
         titleText="Characters Genshin Impact"
       />
-      {conditionCharacterFilter ? (
+      {checkCondition ? (
         listCharacters.map(({ id, ...otherCollectionProps }) => (
           <CharacterPreview searchCharacter={searchCharactersField} key={id} {...otherCollectionProps} />
         ))

@@ -10,11 +10,14 @@ import {
 
 import { WeaponOverviewContainer } from "./weapon-overview.style";
 
+import { checkData } from "../hoc/utils-data";
+
 import SearchBox from "../search-box/search-box.component";
 import WeaponPreview from "../weapon-preview/weapon-preview.component";
 import TextValidationFound from "../text-validation-found/text-validation-found.component";
 import HeaderOverviewWeapon from "../header-overview-weapon/header-overview-weapon.component";
 import FilterTypeOverview from "../filter-type-overview/filter-type-overview.component";
+
 
 const WeaponOverview = ({
   searchWeapon,
@@ -22,15 +25,7 @@ const WeaponOverview = ({
   listWeapons,
   typeWeaponFilter,
 }) => {
-  const weaponFilter = listWeapons.map((list) =>
-    list.weapons.filter((weapon) =>
-      weapon.name.toLowerCase().includes(searchWeaponsField.toLowerCase())
-    )
-  );
-  const conditionWeaponFilter = weaponFilter.reduce(
-    (accumalatedLength, current) => accumalatedLength + current.length,
-    0
-  );
+  const checkCondition = checkData(listWeapons, searchWeaponsField, 'weapons')
   return (
     <WeaponOverviewContainer>
       <SearchBox
@@ -40,7 +35,7 @@ const WeaponOverview = ({
       />
       <FilterTypeOverview typeFilter={typeWeaponFilter}/>
       <HeaderOverviewWeapon />
-      {conditionWeaponFilter ? (
+      {checkCondition ? (
         listWeapons.map(({ id, ...otherCollectionProps }) => (
           <WeaponPreview searchWeapon={searchWeaponsField} key={id} {...otherCollectionProps} />
         ))

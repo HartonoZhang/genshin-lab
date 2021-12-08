@@ -8,10 +8,18 @@ import {
 
 import { updateListCharacters } from "../../redux/character/character.action";
 
+import WithSpinner from "../../components/with-spinner/with-spinner.component";
+
 import { HomepageContainer } from "./homepage.style";
 import CharacterOverview from "../../components/character-overview/character-overview.component";
 
+const CharacterOverviewWithSpinner = WithSpinner(CharacterOverview);
+
 class HomePage extends Component {
+  state = {
+    loading: true,
+  };
+
   unsubscribeFromSnapshot = null;
 
   componentDidMount() {
@@ -21,12 +29,14 @@ class HomePage extends Component {
     colletionRef.onSnapshot(async (snapshot) => {
       const collectionMap = convertListCharactersSnapshotToMap(snapshot);
       updateListCharacer(collectionMap);
+      this.setState({ loading: false });
     });
   }
   render() {
+    const {loading} = this.state;
     return (
       <HomepageContainer>
-        <CharacterOverview />
+        <CharacterOverviewWithSpinner isLoading={loading} />
       </HomepageContainer>
     );
   }

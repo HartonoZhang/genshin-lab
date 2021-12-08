@@ -8,10 +8,18 @@ import {
 
 import { updateListArtifact } from "../../redux/artifact/artifact.action";
 
+import WithSpinner from "../../components/with-spinner/with-spinner.component";
+
 import ArticatOverview from "../../components/artifact-overview/artifact-overview.component";
 import { ArtifactPageContainer } from "./artifact.style";
 
+const ArtifactOverviewWithSpinner = WithSpinner(ArticatOverview);
+
 class ArtifactPage extends Component {
+  state = {
+    loading: true,
+  };
+
   unsubscribeFromSnapshot = null;
 
   componentDidMount() {
@@ -21,12 +29,14 @@ class ArtifactPage extends Component {
     colletionRef.onSnapshot(async (snapshot) => {
       const collectionMap = convertLisArtifactSnapshotToMap(snapshot);
       updateLisArtifact(collectionMap);
+      this.setState({ loading: false });
     });
   }
   render() {
+    const {loading} = this.state;
     return (
       <ArtifactPageContainer>
-        <ArticatOverview />
+        <ArtifactOverviewWithSpinner isLoading={loading} />
       </ArtifactPageContainer>
     );
   }
