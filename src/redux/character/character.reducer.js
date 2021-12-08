@@ -3,7 +3,7 @@ import Character_Detail from "./character-data/character-detail.data";
 import { CharacterActionTypes } from "./character.type";
 
 const INITIAL_STATE = {
-  listCharacter: "",
+  listCharacter: null,
   characterDetail: Character_Detail,
   searchCharacter: "",
 };

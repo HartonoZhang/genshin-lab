@@ -10,10 +10,10 @@ import { updateListArtifact } from "../../redux/artifact/artifact.action";
 
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
-import ArticatOverview from "../../components/artifact-overview/artifact-overview.component";
-import { ArtifactPageContainer } from "./artifact.style";
+import ArtifactOverview from "../../components/artifact-overview/artifact-overview.component";
+import { ArtifactPageContainer } from "./artifacts.style";
 
-const ArtifactOverviewWithSpinner = WithSpinner(ArticatOverview);
+const ArtifactOverviewWithSpinner = WithSpinner(ArtifactOverview);
 
 class ArtifactPage extends Component {
   state = {

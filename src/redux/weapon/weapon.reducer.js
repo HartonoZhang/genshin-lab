@@ -3,8 +3,8 @@ import { WeaponActionTypes } from "./weapon.type";
 import { filterTypeWeaponUtils } from "./weapon.utils";
 
 const INITIAL_STATE = {
-  listWeapon: "",
-  dataWeapon: "",
+  listWeapon: null,
+  dataWeapon: null,
   searchWeapon: "",
   typeWeapon: [
     {

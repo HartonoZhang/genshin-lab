@@ -1,7 +1,7 @@
 import { ArtifactActionTypes } from "./artifact.type";
 
 const INITIAL_STATE = {
-  listArtifact: [],
+  listArtifact: null,
   searchArtifact: "",
 };
 

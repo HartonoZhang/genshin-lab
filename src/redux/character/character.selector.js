@@ -14,12 +14,15 @@ export const selectListCharacterDetail = createSelector(
 
 export const selectSearchFilterCharacter = createSelector(
   [selectCharacter],
-  (character) => character.searchCharacter 
+  (character) => character.searchCharacter
 );
 
 export const selectCharacters = createSelector(
   [selectListCharacter],
-  (listCharacter) => Object.keys(listCharacter).map((key) => listCharacter[key])
+  (listCharacter) =>
+    listCharacter
+      ? Object.keys(listCharacter).map((key) => listCharacter[key])
+      : []
 );
 
 export const selectCharacterDetail = (collectionUrlParam) =>
@@ -27,4 +30,3 @@ export const selectCharacterDetail = (collectionUrlParam) =>
     [selectListCharacterDetail],
     (characterDetail) => characterDetail[collectionUrlParam]
   );
- 

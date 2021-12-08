@@ -17,7 +17,6 @@ export const selectTypeWeapon = createSelector(
   (weapon) => weapon.typeWeapon
 );
 
-export const selectWeapons = createSelector(
-  [selectListWeapon], 
-  (listWeapon) => Object.keys(listWeapon).map((key) => listWeapon[key])
+export const selectWeapons = createSelector([selectListWeapon], (listWeapon) =>
+  listWeapon ? Object.keys(listWeapon).map((key) => listWeapon[key]) : []
 );

@@ -8,7 +8,7 @@ import SearchBox from "../search-box/search-box.component";
 import HeaderOverviewArtifact from "../header-overview-artifact/header-overview-artifact.component";
 import ArtifactPreview from "../artifact-preview/artifact-preview.component";
 
-const ArticatOverview = ({searchArtifact}) => (
+const ArtifactOverview = ({searchArtifact}) => (
   <ArtifactOverviewContainer>
     <SearchBox
       placeholderText="Search Artifact..."
@@ -24,4 +24,4 @@ const mapDispatchToProps = (dispatch) => ({
   searchArtifact: (item) => dispatch(searchFilterArtifact(item.target.value)),
 });
 
-export default connect(null, mapDispatchToProps)(ArticatOverview);
+export default connect(null, mapDispatchToProps)(ArtifactOverview);
