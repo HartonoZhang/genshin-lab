@@ -1,8 +1,3 @@
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-
-import { selectSearchFilterCharacter } from "../../redux/character/character.selector";
-
 import { CharacterPreviewContainer, CharacterPreviewHeaderContainer, CharacterPreviewItemContainer } from "./character-preview.style";
 
 import CharacterItem from "../character-item/character-item.component";
@@ -12,10 +7,10 @@ const CharacterPreview = ({
   title,
   characters,
   visionImgSrc,
-  searchFieldCharacter,
+  searchCharacter,
 }) => {
   const filterCharacter = characters.filter((character) =>
-    character.name.toLowerCase().includes(searchFieldCharacter.toLowerCase())
+    character.name.toLowerCase().includes(searchCharacter.toLowerCase())
   );
   return (
     <CharacterPreviewContainer>
@@ -33,8 +28,5 @@ const CharacterPreview = ({
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  searchFieldCharacter: selectSearchFilterCharacter,
-});
 
-export default connect(mapStateToProps)(CharacterPreview);
+export default CharacterPreview;

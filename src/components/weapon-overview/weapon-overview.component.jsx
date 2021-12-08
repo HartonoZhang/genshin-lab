@@ -42,7 +42,7 @@ const WeaponOverview = ({
       <HeaderOverviewWeapon />
       {conditionWeaponFilter ? (
         listWeapons.map(({ id, ...otherCollectionProps }) => (
-          <WeaponPreview key={id} {...otherCollectionProps} />
+          <WeaponPreview searchWeapon={searchWeaponsField} key={id} {...otherCollectionProps} />
         ))
       ) : (
         <TextValidationFound textField="Weapon Not Found" />

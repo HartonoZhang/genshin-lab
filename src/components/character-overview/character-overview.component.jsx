@@ -36,7 +36,7 @@ const CharacterOverview = ({
       />
       {conditionCharacterFilter ? (
         listCharacters.map(({ id, ...otherCollectionProps }) => (
-          <CharacterPreview key={id} {...otherCollectionProps} />
+          <CharacterPreview searchCharacter={searchCharactersField} key={id} {...otherCollectionProps} />
         ))
       ) : (
         <TextValidationFound textField="Character Not Found" />
