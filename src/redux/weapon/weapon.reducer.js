@@ -1,18 +1,48 @@
-import Weapon_Data from "./weapon-data/weapon.data";
-import Weapon_Type_Data from "./weapon-data/weapon-type.data";
-
 import { WeaponActionTypes } from "./weapon.type";
 
 import { filterTypeWeaponUtils } from "./weapon.utils";
 
 const INITIAL_STATE = {
-  listWeapon: Weapon_Data,
+  listWeapon: "",
+  dataWeapon: "",
   searchWeapon: "",
-  typeWeapon: Weapon_Type_Data,
+  typeWeapon: [
+    {
+      id: 1,
+      imageUrl: "/assets/weapon_type/sword.png",
+      typeWeapon: "sword",
+    },
+    {
+      id: 2,
+      imageUrl: "/assets/weapon_type/claymore.png",
+      typeWeapon: "claymore",
+    },
+    {
+      id: 3,
+      imageUrl: "/assets/weapon_type/catalyst.png",
+      typeWeapon: "catalyst",
+    },
+    {
+      id: 4,
+      imageUrl: "/assets/weapon_type/polearm.png",
+      typeWeapon: "polearm",
+    },
+    {
+      id: 5,
+      imageUrl: "/assets/weapon_type/bow.png",
+      typeWeapon: "bow",
+    },
+  ],
 };
 
 const weaponReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case WeaponActionTypes.UPDATE_LISTWEAPON:
+      return {
+        ...state,
+        listWeapon: action.payload,
+        dataWeapon: action.payload,
+      };
     case WeaponActionTypes.SEARCH_WEAPON:
       return {
         ...state,
@@ -26,7 +56,7 @@ const weaponReducer = (state = INITIAL_STATE, action) => {
     case WeaponActionTypes.FILTER_TYPE_WEAPON:
       return {
         ...state,
-        listWeapon: filterTypeWeaponUtils(Weapon_Data, action.payload),
+        listWeapon: filterTypeWeaponUtils(state.dataWeapon, action.payload),
       };
     default:
       return state;

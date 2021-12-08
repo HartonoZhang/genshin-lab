@@ -9,5 +9,5 @@ export const selectListArtifact = createSelector(
 
 export const selectSearchFilterArtifact = createSelector(
   [selectArtifact],
-  (artifact) => artifact.searchArtifact 
+  (artifact) => artifact.searchArtifact
 );

@@ -1,11 +1,5 @@
 import { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-// import { connect } from "react-redux";
-// import { createStructuredSelector } from "reselect";
-
-// import { addCollectionAndDocuments } from "./firebase/firebase.utils";
-
-// import { selectListWeapon } from "./redux/weapon/weapon.selector";
 
 import "./App.css";
 import Header from "./components/header/header.component";
@@ -16,11 +10,6 @@ import WeaponPage from "./pages/weapons/weapons.component";
 import ArtifactPage from "./pages/artifacts/artifacts.component";
 
 class App extends Component {
-
-  // componentDidMount() {
-    // const { collectionsArray } = this.props;
-    // addCollectionAndDocuments("list_weapon", collectionsArray);
-  // }
   render() {
     return (
       <div className="app-style">
@@ -37,9 +26,4 @@ class App extends Component {
   }
 }
 
-// const mapStateToProps = createStructuredSelector({
-//   collectionsArray: selectListWeapon,
-// });
-
-// export default connect(mapStateToProps)(App);
 export default App;
