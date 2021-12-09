@@ -1,12 +1,9 @@
 import { Component } from "react";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import {
-  firestore,
-  convertListCharactersSnapshotToMap,
-} from "../../firebase/firebase.utils";
-
-import { updateListCharacters } from "../../redux/character/character.action";
+import { fetchListCharactersStartAsync } from "../../redux/character/character.action";
+import { isFetchingData } from "../../redux/character/character.selector";
 
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
@@ -16,34 +13,28 @@ import CharacterOverview from "../../components/character-overview/character-ove
 const CharacterOverviewWithSpinner = WithSpinner(CharacterOverview);
 
 class HomePage extends Component {
-  state = {
-    loading: true,
-  };
-
-  unsubscribeFromSnapshot = null;
-
   componentDidMount() {
-    const { updateListCharacer } = this.props;
-    const colletionRef = firestore.collection("list_character");
-
-    colletionRef.onSnapshot(async (snapshot) => {
-      const collectionMap = convertListCharactersSnapshotToMap(snapshot);
-      updateListCharacer(collectionMap);
-      this.setState({ loading: false });
-    });
+    const { fetchListCharactersStartAsync } = this.props;
+    fetchListCharactersStartAsync();
   }
+
   render() {
-    const {loading} = this.state;
+    const { isDataFetching } = this.props;
     return (
       <HomepageContainer>
-        <CharacterOverviewWithSpinner isLoading={loading} />
+        <CharacterOverviewWithSpinner isLoading={isDataFetching} />
       </HomepageContainer>
     );
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  updateListCharacer: (characterMap) =>
-    dispatch(updateListCharacters(characterMap)),
+const mapStateToProps = createStructuredSelector({
+  isDataFetching: isFetchingData,
 });
-export default connect(null, mapDispatchToProps)(HomePage);
+
+const mapDispatchToProps = (dispatch) => ({
+  fetchListCharactersStartAsync: () =>
+    dispatch(fetchListCharactersStartAsync()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

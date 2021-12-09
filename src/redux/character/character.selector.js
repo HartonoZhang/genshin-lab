@@ -17,6 +17,11 @@ export const selectSearchFilterCharacter = createSelector(
   (character) => character.searchCharacter
 );
 
+export const isFetchingData = createSelector(
+  [selectCharacter],
+  (character) => character.isFetching
+)
+
 export const selectCharacters = createSelector(
   [selectListCharacter],
   (listCharacter) =>

@@ -5,6 +5,8 @@ import { filterTypeWeaponUtils } from "./weapon.utils";
 const INITIAL_STATE = {
   listWeapon: null,
   dataWeapon: null,
+  isFetching: false,
+  errorMessage: undefined,
   searchWeapon: "",
   typeWeapon: [
     {
@@ -37,11 +39,23 @@ const INITIAL_STATE = {
 
 const weaponReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case WeaponActionTypes.UPDATE_LISTWEAPON:
+    case WeaponActionTypes.FETCH_LIST_WEAPON_START:
       return {
         ...state,
+        isFetching: true,
+      };
+    case WeaponActionTypes.FETCH_LIST_WEAPON_SUCCESS:
+      return {
+        ...state,
+        isFetching: false,
         listWeapon: action.payload,
         dataWeapon: action.payload,
+      };
+    case WeaponActionTypes.FETCH_LIST_WEAPON_FAILURE:
+      return {
+        ...state,
+        isFetching: false,
+        errorMessage: action.payload,
       };
     case WeaponActionTypes.SEARCH_WEAPON:
       return {

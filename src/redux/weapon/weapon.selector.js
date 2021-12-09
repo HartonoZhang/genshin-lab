@@ -17,6 +17,11 @@ export const selectTypeWeapon = createSelector(
   (weapon) => weapon.typeWeapon
 );
 
+export const isFetchingData = createSelector(
+  [selectWeapon],
+  (weapon) => weapon.isFetching
+);
+
 export const selectWeapons = createSelector([selectListWeapon], (listWeapon) =>
   listWeapon ? Object.keys(listWeapon).map((key) => listWeapon[key]) : []
 );
