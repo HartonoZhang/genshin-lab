@@ -1,4 +1,4 @@
-import { ArtifactActionTypes } from "./artifact.type";
+import ArtifactActionTypes from "./artifact.type";
 
 const INITIAL_STATE = {
   listArtifact: null,
@@ -12,6 +12,7 @@ const artifactReducer = (state = INITIAL_STATE, action) => {
     case ArtifactActionTypes.FETCH_LIST_ARTIFACT_START:
       return {
         ...state,
+        searchArtifact: "",
         isFetching: true,
       };
     case ArtifactActionTypes.FETCH_LIST_ARTIFACT_SUCCESS:
@@ -30,11 +31,6 @@ const artifactReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         searchArtifact: action.payload,
-      };
-    case ArtifactActionTypes.CLEAR_SEARCH_ARTIFACT:
-      return {
-        ...state,
-        searchArtifact: "",
       };
     default:
       return state;

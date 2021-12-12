@@ -1,4 +1,4 @@
-import { ArtifactActionTypes } from "./artifact.type";
+import ArtifactActionTypes from "./artifact.type";
 
 import {
   convertLisArtifactSnapshotToMap,
@@ -39,6 +39,3 @@ export const searchFilterArtifact = (item) => ({
   payload: item,
 });
 
-export const clearSearchFilterArtifact = () => ({
-  type: ArtifactActionTypes.CLEAR_SEARCH_ARTIFACT,
-});

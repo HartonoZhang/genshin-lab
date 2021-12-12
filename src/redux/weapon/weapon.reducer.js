@@ -1,4 +1,4 @@
-import { WeaponActionTypes } from "./weapon.type";
+import WeaponActionTypes from "./weapon.type";
 
 import { filterTypeWeaponUtils } from "./weapon.utils";
 
@@ -42,6 +42,7 @@ const weaponReducer = (state = INITIAL_STATE, action) => {
     case WeaponActionTypes.FETCH_LIST_WEAPON_START:
       return {
         ...state,
+        searchWeapon: "",
         isFetching: true,
       };
     case WeaponActionTypes.FETCH_LIST_WEAPON_SUCCESS:
@@ -61,11 +62,6 @@ const weaponReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         searchWeapon: action.payload,
-      };
-    case WeaponActionTypes.CLEAR_SEARCH_WEAPON:
-      return {
-        ...state,
-        searchWeapon: "",
       };
     case WeaponActionTypes.FILTER_TYPE_WEAPON:
       return {

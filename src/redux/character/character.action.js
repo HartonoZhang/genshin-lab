@@ -1,4 +1,4 @@
-import { CharacterActionTypes } from "./character.type";
+import CharacterActionTypes from "./character.type";
 
 import {
   firestore,
@@ -39,6 +39,3 @@ export const searchFilterCharacter = (item) => ({
   payload: item,
 });
 
-export const clearSearchFilterCharacter = () => ({
-  type: CharacterActionTypes.CLEAR_SEARCH_CHARACTER,
-});

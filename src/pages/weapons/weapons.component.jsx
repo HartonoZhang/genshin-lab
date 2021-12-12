@@ -1,16 +1,11 @@
 import { Component } from "react";
-import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 
 import { fetchListWeaponStartAsync } from "../../redux/weapon/weapon.action";
-import { isFetchingData } from "../../redux/weapon/weapon.selector";
-
-import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
 import { WeaponPageContainer } from "./weapons.style";
-import WeaponOverview from "../../components/weapon-overview/weapon-overview.component";
 
-const WeaponOverviewWithSpinner = WithSpinner(WeaponOverview);
+import OverviewWeaponContainer from "../../components/weapon-overview/weapon-overview.container";
 
 class WeaponPage extends Component {
   componentDidMount() {
@@ -18,21 +13,16 @@ class WeaponPage extends Component {
     fetchListWeaponStartAsync();
   }
   render() {
-    const { isFetching } = this.props;
     return (
       <WeaponPageContainer>
-        <WeaponOverviewWithSpinner isLoading={isFetching} />
+        <OverviewWeaponContainer />
       </WeaponPageContainer>
     );
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  isFetching: isFetchingData,
-});
-
 const mapDispatchToProps = (dispatch) => ({
   fetchListWeaponStartAsync: () => dispatch(fetchListWeaponStartAsync()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(WeaponPage);
+export default connect(null, mapDispatchToProps)(WeaponPage);

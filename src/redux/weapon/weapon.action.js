@@ -1,4 +1,4 @@
-import { WeaponActionTypes } from "./weapon.type";
+import WeaponActionTypes from "./weapon.type";
 
 import {
   firestore,
@@ -37,10 +37,6 @@ export const fetchListWeaponStartAsync = () => {
 export const searchFilterWeapon = (item) => ({
   type: WeaponActionTypes.SEARCH_WEAPON,
   payload: item,
-});
-
-export const clearSearchFilterWeapon = () => ({
-  type: WeaponActionTypes.CLEAR_SEARCH_WEAPON,
 });
 
 export const filterTypeWeapon = (item) => ({

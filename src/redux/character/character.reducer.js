@@ -1,6 +1,6 @@
 import Character_Detail from "./character-data/character-detail.data";
 
-import { CharacterActionTypes } from "./character.type";
+import CharacterActionTypes from "./character.type";
 
 const INITIAL_STATE = {
   listCharacter: null,
@@ -15,6 +15,7 @@ const characterReducer = (state = INITIAL_STATE, action) => {
     case CharacterActionTypes.FETCH_LIST_CHARACTERS_START:
       return {
         ...state,
+        searchCharacter: "",
         isFetching: true,
       };
       case CharacterActionTypes.FETCH_LIST_CHARACTERS_SUCCESS:
@@ -33,11 +34,6 @@ const characterReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         searchCharacter: action.payload,
-      };
-    case CharacterActionTypes.CLEAR_SEARCH_CHARACTER:
-      return {
-        ...state,
-        searchCharacter: "",
       };
     default:
       return state;

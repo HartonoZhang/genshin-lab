@@ -1,25 +1,19 @@
-import { connect } from "react-redux";
-
-import { clearSearchFilterWeapon } from "../../redux/weapon/weapon.action";
-import { clearSearchFilterCharacter } from "../../redux/character/character.action";
-import { clearSearchFilterArtifact } from "../../redux/artifact/artifact.action";
-
 import { HeaderContainer, HeaderTopContainer, LogoContainer, LogoText, OptionContainer, OptionsContainer } from "./header.style";
 
-const Header = ({ clearSearchWeapon, clearSearchCharacter, clearSearchArtifact }) => (
+const Header = () => (
   <HeaderContainer>
     <HeaderTopContainer>
       <LogoContainer to="/">
         <LogoText>GENSHIN LAB</LogoText>
       </LogoContainer>
       <OptionsContainer>
-        <OptionContainer to="/" onClick={clearSearchCharacter}>
+        <OptionContainer to="/">
           CHARACTERS
         </OptionContainer>
-        <OptionContainer to="/artifacts" onClick={clearSearchArtifact}>
+        <OptionContainer to="/artifacts">
           ARTIFACTS
         </OptionContainer>
-        <OptionContainer to="/weapons" onClick={clearSearchWeapon}>
+        <OptionContainer to="/weapons">
           WEAPONS
         </OptionContainer>
       </OptionsContainer>
@@ -27,10 +21,5 @@ const Header = ({ clearSearchWeapon, clearSearchCharacter, clearSearchArtifact }
   </HeaderContainer>
 );
 
-const mapDispatchToProps = (dispatch) => ({
-  clearSearchCharacter: () => dispatch(clearSearchFilterCharacter()),
-  clearSearchWeapon: () => dispatch(clearSearchFilterWeapon()),
-  clearSearchArtifact: () => dispatch(clearSearchFilterArtifact())
-});
 
-export default connect(null, mapDispatchToProps)(Header);
+export default Header;
