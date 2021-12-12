@@ -1,15 +1,15 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 
-import { fetchListArtifactStartAsync } from "../../redux/artifact/artifact.action";
+import { fetchListArtifactStart } from "../../redux/artifact/artifact.action";
 
 import { ArtifactPageContainer } from "./artifacts.style";
 import OverviewArtifactContainer from "../../components/artifact-overview/artifact-overview.container";
 
 class ArtifactPage extends Component {
   componentDidMount() {
-    const {fetchListArtifactStartAsync} = this.props;
-    fetchListArtifactStartAsync();
+    const {fetchListArtifactStart} = this.props;
+    fetchListArtifactStart();
   }
   render() {
     return (
@@ -21,7 +21,7 @@ class ArtifactPage extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchListArtifactStartAsync: () => dispatch(fetchListArtifactStartAsync()),
+  fetchListArtifactStart: () => dispatch(fetchListArtifactStart()),
 });
 
 export default connect(null, mapDispatchToProps)(ArtifactPage);

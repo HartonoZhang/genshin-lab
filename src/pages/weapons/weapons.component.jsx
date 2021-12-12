@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 
-import { fetchListWeaponStartAsync } from "../../redux/weapon/weapon.action";
+import { fetchListWeaponStart } from "../../redux/weapon/weapon.action";
 
 import { WeaponPageContainer } from "./weapons.style";
 
@@ -9,8 +9,8 @@ import OverviewWeaponContainer from "../../components/weapon-overview/weapon-ove
 
 class WeaponPage extends Component {
   componentDidMount() {
-    const {fetchListWeaponStartAsync} = this.props;
-    fetchListWeaponStartAsync();
+    const {fetchListWeaponStart} = this.props;
+    fetchListWeaponStart();
   }
   render() {
     return (
@@ -22,7 +22,7 @@ class WeaponPage extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchListWeaponStartAsync: () => dispatch(fetchListWeaponStartAsync()),
+  fetchListWeaponStart: () => dispatch(fetchListWeaponStart()),
 });
 
 export default connect(null, mapDispatchToProps)(WeaponPage);

@@ -1,15 +1,15 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 
-import { fetchListCharactersStartAsync } from "../../redux/character/character.action";
+import { fetchListCharactersStart } from "../../redux/character/character.action";
 
 import { HomepageContainer } from "./homepage.style";
 import OverviewCharacterContainer from "../../components/character-overview/character-overview.container";
 
 class HomePage extends Component {
   componentDidMount() {
-    const { fetchListCharactersStartAsync } = this.props;
-    fetchListCharactersStartAsync();
+    const { fetchListCharactersStart } = this.props;
+    fetchListCharactersStart();
   }
   render() {
     return (
@@ -21,8 +21,7 @@ class HomePage extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchListCharactersStartAsync: () =>
-    dispatch(fetchListCharactersStartAsync()),
+  fetchListCharactersStart: () => dispatch(fetchListCharactersStart()),
 });
 
 export default connect(null, mapDispatchToProps)(HomePage);
