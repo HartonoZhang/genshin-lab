@@ -1,5 +1,4 @@
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
+import { useSelector } from "react-redux";
 
 import { selectSearchFilterArtifact } from "../../redux/artifact/artifact.selector";
 
@@ -8,12 +7,15 @@ import { ArtifactPreviewContainer } from "./artifact-preview.style";
 import ArtifactItem from "../artifact-item/artifact-item.component";
 import TextValidationFound from "../text-validation-found/text-validation-found.component";
 
-const ArtifactPreview = ({ searchFieldArtifact, artifacts }) => {
+const ArtifactPreview = ({ artifacts }) => {
+  const searchFieldArtifact = useSelector(selectSearchFilterArtifact);
+
   const filterArtifact = artifacts
     ? artifacts.filter((artifact) =>
         artifact.name.toLowerCase().includes(searchFieldArtifact.toLowerCase())
       )
     : [];
+
   return (
     <ArtifactPreviewContainer>
       {filterArtifact.length ? (
@@ -27,8 +29,4 @@ const ArtifactPreview = ({ searchFieldArtifact, artifacts }) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  searchFieldArtifact: selectSearchFilterArtifact,
-});
-
-export default connect(mapStateToProps)(ArtifactPreview);
+export default ArtifactPreview;

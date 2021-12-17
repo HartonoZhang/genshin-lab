@@ -1,5 +1,4 @@
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
+import { useSelector, useDispatch } from "react-redux";
 
 import {
   selectCharacters,
@@ -15,12 +14,20 @@ import CharacterPreview from "../character-preview/character-preview.component";
 import SearchBox from "../search-box/search-box.component";
 import TextValidationFound from "../text-validation-found/text-validation-found.component";
 
-const CharacterOverview = ({
-  listCharacters,
-  searchCharactersField,
-  searchCharacter,
-}) => {
-  const checkCondition = checkData(listCharacters, searchCharactersField, 'characters');
+const CharacterOverview = () => {
+  const listCharacters = useSelector(selectCharacters);
+  const searchCharactersField = useSelector(selectSearchFilterCharacter);
+
+  const dispatch = useDispatch();
+  const searchCharacter = (item) => {
+    dispatch(searchFilterCharacter(item.target.value));
+  };
+
+  const checkCondition = checkData(
+    listCharacters,
+    searchCharactersField,
+    "characters"
+  );
   return (
     <OverviewContainer>
       <SearchBox
@@ -30,7 +37,11 @@ const CharacterOverview = ({
       />
       {checkCondition ? (
         listCharacters.map(({ id, ...otherCollectionProps }) => (
-          <CharacterPreview searchCharacter={searchCharactersField} key={id} {...otherCollectionProps} />
+          <CharacterPreview
+            searchCharacter={searchCharactersField}
+            key={id}
+            {...otherCollectionProps}
+          />
         ))
       ) : (
         <TextValidationFound textField="Character Not Found" />
@@ -39,13 +50,4 @@ const CharacterOverview = ({
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  listCharacters: selectCharacters,
-  searchCharactersField: selectSearchFilterCharacter,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  searchCharacter: (item) => dispatch(searchFilterCharacter(item.target.value)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(CharacterOverview);
+export default CharacterOverview;

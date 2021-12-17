@@ -1,5 +1,4 @@
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
+import { useDispatch, useSelector } from "react-redux";
 
 import { searchFilterWeapon } from "../../redux/weapon/weapon.action";
 import {
@@ -18,14 +17,17 @@ import TextValidationFound from "../text-validation-found/text-validation-found.
 import HeaderOverviewWeapon from "../header-overview-weapon/header-overview-weapon.component";
 import FilterTypeOverview from "../filter-type-overview/filter-type-overview.component";
 
+const WeaponOverview = () => {
+  const listWeapons = useSelector(selectWeapons);
+  const searchWeaponsField = useSelector(selectSearchWeapon);
+  const typeWeaponFilter = useSelector(selectTypeWeapon);
 
-const WeaponOverview = ({
-  searchWeapon,
-  searchWeaponsField,
-  listWeapons,
-  typeWeaponFilter,
-}) => {
-  const checkCondition = checkData(listWeapons, searchWeaponsField, 'weapons')
+  const dispatch = useDispatch();
+  const searchWeapon = (item) => {
+    dispatch(searchFilterWeapon(item.target.value));
+  };
+
+  const checkCondition = checkData(listWeapons, searchWeaponsField, "weapons");
   return (
     <WeaponOverviewContainer>
       <SearchBox
@@ -33,11 +35,15 @@ const WeaponOverview = ({
         searchCharacter={searchWeapon}
         titleText="Weapon Genshin Impact"
       />
-      <FilterTypeOverview typeFilter={typeWeaponFilter}/>
+      <FilterTypeOverview typeFilter={typeWeaponFilter} />
       <HeaderOverviewWeapon />
       {checkCondition ? (
         listWeapons.map(({ id, ...otherCollectionProps }) => (
-          <WeaponPreview searchWeapon={searchWeaponsField} key={id} {...otherCollectionProps} />
+          <WeaponPreview
+            searchWeapon={searchWeaponsField}
+            key={id}
+            {...otherCollectionProps}
+          />
         ))
       ) : (
         <TextValidationFound textField="Weapon Not Found" />
@@ -46,14 +52,4 @@ const WeaponOverview = ({
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  listWeapons: selectWeapons,
-  searchWeaponsField: selectSearchWeapon,
-  typeWeaponFilter: selectTypeWeapon,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  searchWeapon: (item) => dispatch(searchFilterWeapon(item.target.value)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(WeaponOverview);
+export default WeaponOverview;

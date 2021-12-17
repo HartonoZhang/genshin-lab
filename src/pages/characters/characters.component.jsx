@@ -3,19 +3,8 @@ import { Component } from "react";
 
 import CharacterDetailPage from "../character-detail/character-detail.component";
 
-// import {
-//   firestore,
-//   convertCharactersSnapshotToMap,
-// } from "../../firebase/firebase.utils";
-
 class CharacterPage extends Component {
   unsubscribeFromSnapshot = null;
-
-  // componentDidMount(){
-  //   const CollectionRef = firestore.collection('list_character');
-  //   CollectionRef.onSnapshot(async snapshot => convertCharactersSnapshotToMap(snapshot));
-  // }
-
   render() {
     const { match } = this.props;
     return (

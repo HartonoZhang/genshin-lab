@@ -1,27 +1,23 @@
-import { Component } from "react";
-import { connect } from "react-redux";
+import { useLayoutEffect } from "react";
+import { useDispatch } from "react-redux";
 
 import { fetchListArtifactStart } from "../../redux/artifact/artifact.action";
 
 import { ArtifactPageContainer } from "./artifacts.style";
 import OverviewArtifactContainer from "../../components/artifact-overview/artifact-overview.container";
 
-class ArtifactPage extends Component {
-  componentDidMount() {
-    const {fetchListArtifactStart} = this.props;
-    fetchListArtifactStart();
-  }
-  render() {
-    return (
-      <ArtifactPageContainer>
-        <OverviewArtifactContainer />
-      </ArtifactPageContainer>
-    );
-  }
-}
+const ArtifactPage = () => {
+  const dispatch = useDispatch();
 
-const mapDispatchToProps = (dispatch) => ({
-  fetchListArtifactStart: () => dispatch(fetchListArtifactStart()),
-});
+  useLayoutEffect(() => {
+    dispatch(fetchListArtifactStart());
+  }, [dispatch]);
 
-export default connect(null, mapDispatchToProps)(ArtifactPage);
+  return (
+    <ArtifactPageContainer>
+      <OverviewArtifactContainer />
+    </ArtifactPageContainer>
+  );
+};
+
+export default ArtifactPage;
