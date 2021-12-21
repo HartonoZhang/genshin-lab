@@ -1,8 +1,11 @@
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 
 import { selectCharacterDetail } from "../../redux/character/character.selector";
 
-const CharacterDetailPage = ({ character }) => {
+const CharacterDetailPage = () => {
+  const { characterId } = useParams();
+  const character = useSelector(selectCharacterDetail(characterId))
   const {name} = character;
   return (
     <div className="character-detail-page">
@@ -11,8 +14,5 @@ const CharacterDetailPage = ({ character }) => {
   );
 };
 
-const mapStateToProps = (state, ownProps) => ({
-  character: selectCharacterDetail(ownProps.match.params.characterId)(state),
-});
 
-export default connect(mapStateToProps)(CharacterDetailPage);
+export default CharacterDetailPage;

@@ -1,21 +1,17 @@
-import { Route } from "react-router-dom";
-import { Component } from "react";
+import { Route, useRouteMatch } from "react-router-dom";
 
 import CharacterDetailPage from "../character-detail/character-detail.component";
 
-class CharacterPage extends Component {
-  unsubscribeFromSnapshot = null;
-  render() {
-    const { match } = this.props;
-    return (
-      <div className="character-page">
-        <Route
-          path={`${match.path}/:characterId`}
-          component={CharacterDetailPage}
-        />
-      </div>
-    );
-  }
-}
+const CharacterPage = () => {
+  const match = useRouteMatch();
+  return (
+    <div className="character-page">
+      <Route
+        path={`${match.path}/:characterId`}
+        component={CharacterDetailPage}
+      />
+    </div>
+  );
+};
 
 export default CharacterPage;

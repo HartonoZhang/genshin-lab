@@ -1,4 +1,4 @@
-import { withRouter } from "react-router-dom";
+import { withRouter, useHistory, useRouteMatch } from "react-router-dom";
 
 import {
   CharacterItemContainer,
@@ -6,7 +6,9 @@ import {
   CharacterNameContainer,
 } from "./character-item.style";
 
-const CharacterItem = ({ character, match, history }) => {
+const CharacterItem = ({ character }) => {
+  const history = useHistory();
+  const match = useRouteMatch();
   const { name, imgSrc, linkUrl } = character;
   return (
     <CharacterItemContainer
