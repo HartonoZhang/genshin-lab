@@ -7,9 +7,9 @@ import {
   selectTypeWeapon,
 } from "../../redux/weapon/weapon.selector";
 
-import { WeaponOverviewContainer } from "./weapon-overview.style";
+import { OverviewContainer } from "../../high-order-component/style";
 
-import { checkData } from "../hoc/utils-data";
+import { checkData } from "../../high-order-component/utils-data";
 
 import SearchBox from "../search-box/search-box.component";
 import WeaponPreview from "../weapon-preview/weapon-preview.component";
@@ -29,7 +29,7 @@ const WeaponOverview = () => {
 
   const checkCondition = checkData(listWeapons, searchWeaponsField, "weapons");
   return (
-    <WeaponOverviewContainer>
+    <OverviewContainer>
       <SearchBox
         placeholderText="Search Weapon..."
         searchCharacter={searchWeapon}
@@ -48,7 +48,7 @@ const WeaponOverview = () => {
       ) : (
         <TextValidationFound textField="Weapon Not Found" />
       )}
-    </WeaponOverviewContainer>
+    </OverviewContainer>
   );
 };
 

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { searchFilterArtifact } from "../../redux/artifact/artifact.action";
 import { selectListArtifact } from "../../redux/artifact/artifact.selector";
 
-import { ArtifactOverviewContainer } from "./artifact-overview.style";
+import { OverviewContainer } from "../../high-order-component/style";
 
 import SearchBox from "../search-box/search-box.component";
 import HeaderOverviewArtifact from "../header-overview-artifact/header-overview-artifact.component";
@@ -18,7 +18,7 @@ const ArtifactOverview = () => {
   };
 
   return (
-    <ArtifactOverviewContainer>
+    <OverviewContainer>
       <SearchBox
         placeholderText="Search Artifact..."
         searchCharacter={searchArtifact}
@@ -26,7 +26,7 @@ const ArtifactOverview = () => {
       />
       <HeaderOverviewArtifact />
       <ArtifactPreview artifacts={artifacts} />
-    </ArtifactOverviewContainer>
+    </OverviewContainer>
   );
 };
 

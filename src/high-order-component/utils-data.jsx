@@ -1,6 +1,6 @@
 export const checkData = (listData, searchData, type) => {
   const dataFilter = listData.map((list) =>
-    type === 'characters'
+    type === "characters"
       ? list.characters.filter((data) =>
           data.name.toLowerCase().includes(searchData.toLowerCase())
         )

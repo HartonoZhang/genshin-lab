@@ -23,7 +23,7 @@ const ArtifactItem = ({ artifact }) => {
       <ArtifactTextColumnContainer>
         {pieceBonus.map((bonus) => (
           <p key={bonus.setBonus}>
-            <SetBonusBold>{bonus.setBonus}</SetBonusBold>
+            <SetBonusBold>{bonus.setBonus}: </SetBonusBold>
             {bonus.description}
           </p>
         ))}

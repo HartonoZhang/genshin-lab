@@ -1,16 +1,17 @@
 import { Route, useRouteMatch } from "react-router-dom";
 
-import CharacterDetailPage from "../character-detail/character-detail.component";
+import CharacterDetailOverview from "../../components/character-detail-overview/character-detail-overview";
+import { CharacterContainer } from "./characters.style";
 
 const CharacterPage = () => {
   const match = useRouteMatch();
   return (
-    <div className="character-page">
+    <CharacterContainer>
       <Route
         path={`${match.path}/:characterId`}
-        component={CharacterDetailPage}
+        component={CharacterDetailOverview}
       />
-    </div>
+    </CharacterContainer>
   );
 };
 

@@ -6,9 +6,9 @@ import {
 } from "../../redux/character/character.selector";
 import { searchFilterCharacter } from "../../redux/character/character.action";
 
-import { OverviewContainer } from "./character-overview.style";
+import { OverviewContainer } from "../../high-order-component/style";
 
-import { checkData } from "../hoc/utils-data";
+import { checkData } from "../../high-order-component/utils-data";
 
 import CharacterPreview from "../character-preview/character-preview.component";
 import SearchBox from "../search-box/search-box.component";

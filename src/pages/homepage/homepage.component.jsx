@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { fetchListCharactersStart } from "../../redux/character/character.action";
 
-import { HomepageContainer } from "./homepage.style";
+import { PageContainer } from "../../high-order-component/style";
 import OverviewCharacterContainer from "../../components/character-overview/character-overview.container";
 
 const HomePage = () => {
@@ -14,9 +14,9 @@ const HomePage = () => {
   }, [dispatch]);
 
   return (
-    <HomepageContainer>
+    <PageContainer>
       <OverviewCharacterContainer />
-    </HomepageContainer>
+    </PageContainer>
   );
 };
 

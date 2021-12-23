@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { fetchListWeaponStart } from "../../redux/weapon/weapon.action";
 
-import { WeaponPageContainer } from "./weapons.style";
+import { PageContainer } from "../../high-order-component/style";
 
 import OverviewWeaponContainer from "../../components/weapon-overview/weapon-overview.container";
 
@@ -15,9 +15,9 @@ const WeaponPage = () => {
   }, [dispatch]);
 
   return (
-    <WeaponPageContainer>
+    <PageContainer>
       <OverviewWeaponContainer />
-    </WeaponPageContainer>
+    </PageContainer>
   );
 }
 

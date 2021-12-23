@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { fetchListArtifactStart } from "../../redux/artifact/artifact.action";
 
-import { ArtifactPageContainer } from "./artifacts.style";
+import { PageContainer } from "../../high-order-component/style";
 import OverviewArtifactContainer from "../../components/artifact-overview/artifact-overview.container";
 
 const ArtifactPage = () => {
@@ -14,9 +14,9 @@ const ArtifactPage = () => {
   }, [dispatch]);
 
   return (
-    <ArtifactPageContainer>
+    <PageContainer>
       <OverviewArtifactContainer />
-    </ArtifactPageContainer>
+    </PageContainer>
   );
 };
 
