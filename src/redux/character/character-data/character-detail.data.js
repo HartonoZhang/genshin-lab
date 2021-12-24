@@ -16,44 +16,50 @@ const Character_Detail = {
           id: 'c1',
           name: 'Raging Vortex',
           sub_description: 'Constellation Level 1',
-          description: 'Palm Vortex pulls in enemies within a 5m radius.'
+          description: 'Palm Vortex pulls in enemies within a 5m radius.',
+          imgSrc: '/assets/character-detail/traveler_anemo/constellation/raging_vortex.png'
         },
         {
           id: 'c2',
-          name: 'Raging Vortex',
+          name: 'Uprising Whirlwind',
           sub_description: 'Constellation Level 2',
-          description: 'Increases Energy Recharge by 16%.'
+          description: 'Increases Energy Recharge by 16%.',
+          imgSrc: '/assets/character-detail/traveler_anemo/constellation/uprising_whirlwind.png'
         },
         {
           id: 'c3',
-          name: 'Raging Vortex',
+          name: 'Sweeping Gust',
           sub_description: 'Constellation Level 3',
-          description: 'Increases the Level of Gust Surge by 3.\nMaximum upgrade level is 15.'
+          description: 'Increases the Level of Gust Surge by 3.\nMaximum upgrade level is 15.',
+          imgSrc: '/assets/character-detail/traveler_anemo/constellation/sweeping_gust.png'
         },
         {
           id: 'c4',
-          name: 'Raging Vortex',
+          name: 'Cherishing Breezes',
           sub_description: 'Constellation Level 4',
-          description: 'Reduces DMG taken while casting Palm Vortex by 10%.'
+          description: 'Reduces DMG taken while casting Palm Vortex by 10%.',
+          imgSrc: '/assets/character-detail/traveler_anemo/constellation/cherishing_breezes.png'
         },
         {
           id: 'c5',
-          name: 'Raging Vortex',
+          name: 'Vortex Stellaris',
           sub_description: 'Constellation Level 5',
-          description: 'Increase the Level of Palm Vortex by 3.\nMaximum upgrade level is 15.'
+          description: 'Increase the Level of Palm Vortex by 3.\nMaximum upgrade level is 15.',
+          imgSrc: '/assets/character-detail/traveler_anemo/constellation/vortex_stellaris.png'
         },
         {
           id: 'c6',
-          name: 'Raging Vortex',
+          name: 'Intertwined Winds',
           sub_description: 'Constellation Level 6',
-          description: 'Targets who take DMG from Gust Surge have their Anemo RES decreased by 20%. If an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%.'
+          description: 'Targets who take DMG from Gust Surge have their Anemo RES decreased by 20%. If an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%.',
+          imgSrc: '/assets/character-detail/traveler_anemo/constellation/intertwined_winds.png'
         },
       ]
     },
     build: {
         title_build: "Best Traveler (Anemo) Builds",
         role_build: "Anemo Sub DPS Build",
-        description: "This build empowers the Traveler's Anemo and Swirl damage, while simultaneously reducing enemies' Elemental RES for the rest of your party.",
+        description: "This build empowers the Traveler's Anemo and Swirl damage, while simultaneously reducing enemies Elemental RES for the rest of your party.",
         weapon_build: [
           {
             id: "WP0002",
@@ -99,19 +105,22 @@ const Character_Detail = {
           id: 'skill-1',
           name: 'Foreign Ironwind',
           sub_description: 'Normal Attack',
-          description: "Normal Attack\nPerforms up to 5 consecutive strikes.\nCharged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact."
+          description: "Normal Attack\n\nPerforms up to 5 consecutive strikes.\n\nCharged Attack\n\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\nPlunging Attack\n\nPlunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.",
+          imgSrc: '/assets/character-detail/traveler_anemo/skill-talent/foreign_ironwind.png'
         },
         {
           id: 'skill-2',
           name: 'Palm Vortex',
           sub_description: 'Elemental Skill',
-          description: "Grasping the wind's might, you form a vortex of vacuum in your palm, causing continuous Anemo DMG to enemies in front of you. The vacuum vortex explodes when the skill duration ends, causing a greater amount of Anemo DMG over a larger area.\nHold\nDMG and AoE will gradually increase\nElemental Absorption\nIf the vortex comes in contact with Hydro/Pyro/Cryo/Electro elements, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use."
+          description: "Grasping the wind's might, you form a vortex of vacuum in your palm, causing continuous Anemo DMG to enemies in front of you. The vacuum vortex explodes when the skill duration ends, causing a greater amount of Anemo DMG over a larger area.\n\nHold\n\nDMG and AoE will gradually increase\n\nElemental Absorption\n\nIf the vortex comes in contact with Hydro/Pyro/Cryo/Electro elements, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use.",
+          imgSrc: '/assets/character-detail/traveler_anemo/skill-talent/palm_vortex.png'
         },
         {
           id: 'skill-3',
           name: 'Gust Surge',
           sub_description: 'Elemental Burst',
-          description: "Guiding the path of the wind currents, you summon a forward-moving tornado that pulls objects and opponents towards itself, dealing continuous Anemo DMG.\nElemental Absorption\nIf the tornado comes in contact with Hydro/Pyro/Cryo/Electro elements, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use."
+          description: "Guiding the path of the wind currents, you summon a forward-moving tornado that pulls objects and opponents towards itself, dealing continuous Anemo DMG.\nElemental Absorption\n\nIf the tornado comes in contact with Hydro/Pyro/Cryo/Electro elements, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use.",
+          imgSrc: '/assets/character-detail/traveler_anemo/skill-talent/gust_surge.png'
         },
       ]
   },
@@ -122,13 +131,15 @@ const Character_Detail = {
           id: 'passive-1',
           name: 'Slitting Wind',
           sub_description: 'Unlocked at Ascension 1',
-          description: 'The last hit of a Normal Attack combo unleashes a wind blade, dealing 60% of ATK as Anemo DMG to all opponents in its path.'
+          description: 'The last hit of a Normal Attack combo unleashes a wind blade, dealing 60% of ATK as Anemo DMG to all opponents in its path.',
+          imgSrc: '/assets/character-detail/traveler_anemo/passive/slitting_wind.png'
         },
         {
           id: 'passive-2',
           name: 'Second Wind',
           sub_description: 'Unlocked at Ascension 4',
-          description: 'Palm Vortex kills renegerate 2% HP for 5s. This effect can only occur once every 5s.'
+          description: 'Palm Vortex kills renegerate 2% HP for 5s. This effect can only occur once every 5s.',
+          imgSrc: '/assets/character-detail/traveler_anemo/passive/second_wind.png'
         },
       ]
     },

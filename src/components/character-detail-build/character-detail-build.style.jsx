@@ -1,23 +1,20 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { FontColorVision } from "../../high-order-component/style";
 
-export const CharacterDetailBuildContainer = styled.div`
+const DisplayFlexDirection = css`
   display: flex;
   flex-direction: column;
-`;
+`
 
-export const TitleDetailPreview = styled.h2`
-  color: white;
-  font-weight: bolder;
-  font-size: 22px;
+export const CharacterDetailBuildContainer = styled.div`
+  ${DisplayFlexDirection};
 `;
 
 export const BuildContainer = styled.div`
+  ${DisplayFlexDirection};
   background-color: rgb(54, 53, 53);
   padding: 15px;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
   gap: 15px;
 `;
 

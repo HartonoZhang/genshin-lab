@@ -1,7 +1,8 @@
 import BuildOverview from "../build-overview/build-overview.component";
+import SubtitleCharacterDetail from "../subtitle-character-detail/subtitle-character-detail.component";
+
 import {
   CharacterDetailBuildContainer,
-  TitleDetailPreview,
   BuildContainer,
   RoleBuildCharacter,
 } from "./character-detail-build.style";
@@ -12,7 +13,7 @@ const CharacterDetailBuild = ({ build, vision }) => {
   const buildData = { weapon_build, artifact_build };
   return (
     <CharacterDetailBuildContainer>
-      <TitleDetailPreview>{title_build}</TitleDetailPreview>
+      <SubtitleCharacterDetail>{title_build}</SubtitleCharacterDetail>
       <BuildContainer>
         <RoleBuildCharacter className={vision}>{role_build}</RoleBuildCharacter>
         <span>{description}</span>

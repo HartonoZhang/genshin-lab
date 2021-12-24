@@ -1,4 +1,4 @@
-import BuildItemDescription from "../build-item-description/build-item-description.component";
+import ItemDescription from "../character-item-description/character-item-description.component";
 import BuildItemInfo from "../build-item-info/build-item-info.component";
 
 import { BuildItemContainer } from "./build-item.style";
@@ -11,7 +11,7 @@ const BuildItem = ({ data, vision }) => {
   return (
     <BuildItemContainer>
       <BuildItemInfo data={itemInfoProps} />
-      <BuildItemDescription data={itemDescriptionProps} />
+      <ItemDescription data={itemDescriptionProps} />
     </BuildItemContainer>
   );
 };

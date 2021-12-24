@@ -1,9 +1,9 @@
-import { BuildItemDescriptionContainer } from "./build-item-description.style";
+import { ItemDescriptionContainer } from "./character-item-description.style";
 
-const BuildItemDescription = ({ data }) => {
+const ItemDescription = ({ data }) => {
   const { description, pieceBonus } = data;
   return (
-    <BuildItemDescriptionContainer>
+    <ItemDescriptionContainer>
       {description ? (
         <p>{description}</p>
       ) : (
@@ -14,8 +14,8 @@ const BuildItemDescription = ({ data }) => {
         ))
         
       )}
-    </BuildItemDescriptionContainer>
+    </ItemDescriptionContainer>
   );
 };
 
-export default BuildItemDescription;
+export default ItemDescription;
