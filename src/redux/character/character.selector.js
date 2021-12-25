@@ -20,7 +20,7 @@ export const selectSearchFilterCharacter = createSelector(
 export const isFetchingData = createSelector(
   [selectCharacter],
   (character) => character.isFetching
-)
+);
 
 export const selectCharacters = createSelector(
   [selectListCharacter],
@@ -34,4 +34,18 @@ export const selectCharacterDetail = (collectionUrlParam) =>
   createSelector(
     [selectListCharacterDetail],
     (characterDetail) => characterDetail[collectionUrlParam]
+  );
+
+export const selectCharacterDetailToMap = createSelector(
+  [selectListCharacterDetail],
+  (characterDetail) =>
+    characterDetail
+      ? Object.keys(characterDetail).map((key) => characterDetail[key])
+      : []
+);
+
+export const selectCharacterDetailVision = (collectionUrlParam) =>
+  createSelector(
+    [selectListCharacterDetail],
+    (characterDetail) => characterDetail[collectionUrlParam].vision
   );

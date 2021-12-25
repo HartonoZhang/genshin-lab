@@ -1,26 +1,20 @@
-import BuildItem from "../build-item/build-item.component";
-import {
-  BuildOverviewContainer,
-  WeaponArtifactBuildContainer,
-  TitleBuild
-} from "./build-overview.style";
+import BuildPreview from "../build-preview/build-preview.component";
 
-const BuildOverview = ({ data, vision }) => {
+import { BuildOverviewContainer } from "./build-overview.style";
+
+const BuildOverview = ({ data }) => {
   const { weapon_build, artifact_build } = data;
+
   return (
     <BuildOverviewContainer>
-      <WeaponArtifactBuildContainer>
-        <TitleBuild>Weapon</TitleBuild>
-        {weapon_build.map((item) => (
-          <BuildItem key={item.id} data={item} vision={vision} />
-        ))}
-      </WeaponArtifactBuildContainer>
-      <WeaponArtifactBuildContainer>
-        <TitleBuild>Artifact</TitleBuild>
-        {artifact_build.map((item) => (
-          <BuildItem key={item.id} data={item} vision={vision} />
-        ))}
-      </WeaponArtifactBuildContainer>
+      <BuildPreview 
+        data={weapon_build} 
+        titleBuild="Weapon" 
+      />
+      <BuildPreview
+        data={artifact_build}
+        titleBuild="Artifact"
+      />
     </BuildOverviewContainer>
   );
 };

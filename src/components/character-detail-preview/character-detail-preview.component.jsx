@@ -3,14 +3,14 @@ import CharacterDetailSubInfo from "../character-detail-subinfo/character-detail
 import { CharacterDetailPreviewContainer } from "./character-detail-preview.style";
 
 const CharacterDetailPreview = ({ character }) => {
-  const { build, vision, constellation, skill_talent, passive } = character;
+  const { build, constellation, skill_talent, passive } = character;
   console.log(character);
   return (
     <CharacterDetailPreviewContainer>
-      <CharacterDetailBuild build={build} vision={vision} />
-      <CharacterDetailSubInfo data={constellation} vision={vision} />
-      <CharacterDetailSubInfo data={skill_talent} vision={vision} />
-      <CharacterDetailSubInfo data={passive} vision={vision} />
+      <CharacterDetailBuild build={build} />
+      <CharacterDetailSubInfo data={constellation} />
+      <CharacterDetailSubInfo data={skill_talent} />
+      <CharacterDetailSubInfo data={passive} />
     </CharacterDetailPreviewContainer>
   );
 };

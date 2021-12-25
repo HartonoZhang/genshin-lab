@@ -5,12 +5,3 @@ export const BuildOverviewContainer = styled.div`
   text-align: left;
   gap: 10px;
 `;
-
-export const WeaponArtifactBuildContainer = styled.div`
-  width: 50%;
-`
-
-export const TitleBuild = styled.span`
-  color: white;
-  font-weight: bolder;
-`

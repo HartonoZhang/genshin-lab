@@ -8,7 +8,9 @@ import Footer from "./components/footer/footer.component";
 import WeaponPage from "./pages/weapons/weapons.component";
 import ArtifactPage from "./pages/artifacts/artifacts.component";
 
-const App = () => (
+
+const App = () => {
+  return(
   <div className="app-style">
     <Header />
     <Switch>
@@ -19,6 +21,6 @@ const App = () => (
     </Switch>
     <Footer />
   </div>
-);
+)};
 
 export default App;

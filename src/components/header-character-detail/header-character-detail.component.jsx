@@ -8,10 +8,10 @@ import {
 } from "./header-character-detail.style";
 
 const HeaderCharacterDetail = ({ character }) => {
-  const { name, rating, vision, weapon, imgSrc, rarity, visionImgSrc } =
+  const { name, rating, vision, weapon_type, imgSrc, rarity, visionImgSrc } =
     character;
   const characterProfileProp = { imgSrc, visionImgSrc };
-  const characterBioProp = { name, vision, weapon, rarity };
+  const characterBioProp = { name, vision, weapon_type, rarity };
   return (
     <HeaderCharacterDetailContainer className={vision}>
       <CharacterBiographyContainer>

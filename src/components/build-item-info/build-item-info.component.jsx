@@ -1,3 +1,7 @@
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { selectCharacterDetailVision } from "../../redux/character/character.selector";
+
 import {
   BuildItemInfoContainer,
   BuildItemImageContainer,
@@ -9,7 +13,9 @@ import {
 } from "./build-item-info.style";
 
 const BuildItemInfo = ({ data }) => {
-  const { name, imgSrc, sub_description, rarity, vision } = data;
+  const { characterId } = useParams();
+  const vision = useSelector(selectCharacterDetailVision(characterId));
+  const { name, imgSrc, sub_description, rarity } = data;
   return (
     <BuildItemInfoContainer>
       <BuildItemImageContainer>
