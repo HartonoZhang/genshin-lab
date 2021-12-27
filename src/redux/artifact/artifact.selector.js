@@ -8,7 +8,7 @@ export const selectListArtifact = createSelector([selectArtifact], (artifact) =>
 
 export const selectSearchFilterArtifact = createSelector(
   [selectArtifact],
-  (artifact) => artifact ? artifact.searchArtifact : ""
+  (artifact) => (artifact ? artifact.searchArtifact : "")
 );
 
 export const isFetchingData = createSelector(

@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
 
 import { CharacterDetailOverviewContainer } from "./character-detail-overview.style";
 
@@ -9,14 +8,13 @@ import HeaderCharacterDetail from "../header-character-detail/header-character-d
 import CharacterDetailPreview from "../character-detail-preview/character-detail-preview.component";
 
 const CharacterDetailOverview = () => {
-  const { characterId } = useParams();
-  const character = useSelector(selectCharacterDetail(characterId));
-  return (
+  const character = useSelector(selectCharacterDetail);
+  return character ? (
     <CharacterDetailOverviewContainer>
       <HeaderCharacterDetail character={character} />
       <CharacterDetailPreview character={character} />
     </CharacterDetailOverviewContainer>
-  );
+  ): null;
 };
 
 export default CharacterDetailOverview;

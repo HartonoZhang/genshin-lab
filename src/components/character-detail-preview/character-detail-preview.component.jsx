@@ -4,7 +4,6 @@ import { CharacterDetailPreviewContainer } from "./character-detail-preview.styl
 
 const CharacterDetailPreview = ({ character }) => {
   const { build, constellation, skill_talent, passive } = character;
-  console.log(character);
   return (
     <CharacterDetailPreviewContainer>
       <CharacterDetailBuild build={build} />

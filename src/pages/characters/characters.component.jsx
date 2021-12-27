@@ -1,7 +1,8 @@
 import { Route, useRouteMatch } from "react-router-dom";
+import CharacterDetailPage from "./character-detail-page.component";
 
-import CharacterDetailOverview from "../../components/character-detail-overview/character-detail-overview";
 import { CharacterContainer } from "./characters.style";
+
 
 const CharacterPage = () => {
   const match = useRouteMatch();
@@ -9,7 +10,7 @@ const CharacterPage = () => {
     <CharacterContainer>
       <Route
         path={`${match.path}/:characterId`}
-        component={CharacterDetailOverview}
+        component={CharacterDetailPage}
       />
     </CharacterContainer>
   );

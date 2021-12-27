@@ -5,11 +5,14 @@ import CharacterActionTypes from "./character.type";
 import {
   firestore,
   convertListCharactersSnapshotToMap,
+  convertCharacterDetailSnapshotToData,
 } from "../../firebase/firebase.utils";
 
 import {
   fetchListCharactersSuccess,
   fetchListCharactersFailure,
+  fetchCharacterDetailFailure,
+  fetchCharacterDetailSuccess,
 } from "./character.action";
 
 export function* fetchListCharacterAsync() {
@@ -26,6 +29,20 @@ export function* fetchListCharacterAsync() {
   }
 }
 
+export function* fetchCharacterDetailAsync({ payload }) {
+  try {
+    const characterDetailRef = firestore.collection('character_detail').doc(payload);
+    const snapshot = yield characterDetailRef.get();
+    const characterDetailMap = yield call(
+      convertCharacterDetailSnapshotToData,
+      snapshot
+    );
+    yield put(fetchCharacterDetailSuccess(characterDetailMap));
+  } catch (error) {
+    yield put(fetchCharacterDetailFailure(error));
+  }
+}
+
 export function* fetchListCharacterStart() {
   yield takeLatest(
     CharacterActionTypes.FETCH_LIST_CHARACTERS_START,
@@ -33,6 +50,13 @@ export function* fetchListCharacterStart() {
   );
 }
 
+export function* fetchCharacterDetailStart() {
+  yield takeLatest(
+    CharacterActionTypes.FETCH_CHARACTERS_DETAIL_START,
+    fetchCharacterDetailAsync
+  );
+}
+
 export function* characterSaga() {
-  yield all([call(fetchListCharacterStart)]);
+  yield all([call(fetchListCharacterStart), call(fetchCharacterDetailStart)]);
 }

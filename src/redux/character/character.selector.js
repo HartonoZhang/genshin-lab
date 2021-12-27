@@ -7,7 +7,7 @@ export const selectListCharacter = createSelector(
   (character) => character.listCharacter
 );
 
-export const selectListCharacterDetail = createSelector(
+export const selectCharacterDetail = createSelector(
   [selectCharacter],
   (character) => character.characterDetail
 );
@@ -30,22 +30,15 @@ export const selectCharacters = createSelector(
       : []
 );
 
-export const selectCharacterDetail = (collectionUrlParam) =>
-  createSelector(
-    [selectListCharacterDetail],
-    (characterDetail) => characterDetail[collectionUrlParam]
-  );
-
-export const selectCharacterDetailToMap = createSelector(
-  [selectListCharacterDetail],
+export const selectFirebaseData = createSelector(
+  [selectCharacterDetail],
   (characterDetail) =>
     characterDetail
       ? Object.keys(characterDetail).map((key) => characterDetail[key])
       : []
 );
 
-export const selectCharacterDetailVision = (collectionUrlParam) =>
-  createSelector(
-    [selectListCharacterDetail],
-    (characterDetail) => characterDetail[collectionUrlParam].vision
+export const selectCharacterDetailVision = () =>
+  createSelector([selectCharacterDetail], (characterDetail) =>
+    characterDetail ? characterDetail.vision : ""
   );

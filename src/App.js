@@ -8,8 +8,15 @@ import Footer from "./components/footer/footer.component";
 import WeaponPage from "./pages/weapons/weapons.component";
 import ArtifactPage from "./pages/artifacts/artifacts.component";
 
+// import { addCollectionAndDocuments } from "./firebase/firebase.utils";
+// import { useEffect } from "react";
+// import { useSelector } from "react-redux";
 
 const App = () => {
+  // const data = useSelector();
+  // useEffect(() => {
+  //   addCollectionAndDocuments('list_artifact', data)
+  // }, [data])
   return(
   <div className="app-style">
     <Header />
