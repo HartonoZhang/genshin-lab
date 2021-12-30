@@ -10,7 +10,7 @@ export const CharacterBiographyDetail = styled.div`
   gap: 5px;
 
   img {
-    width: 85px;
+    width: 70px;
   }
 `;
 

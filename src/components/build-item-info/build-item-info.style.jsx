@@ -13,7 +13,6 @@ export const BuildItemImageContainer = styled.div`
 export const ImageItemRarity = styled.img`
   position: absolute;
   bottom: -2px;
-  width: 60px;
   left: 10px;
 `;
 

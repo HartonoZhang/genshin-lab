@@ -14,9 +14,11 @@ import ArtifactPage from "./pages/artifacts/artifacts.component";
 
 const App = () => {
   // const data = useSelector();
+
   // useEffect(() => {
-  //   addCollectionAndDocuments('list_artifact', data)
+  //   addCollectionAndDocuments('character_detail', data)
   // }, [data])
+
   return(
   <div className="app-style">
     <Header />

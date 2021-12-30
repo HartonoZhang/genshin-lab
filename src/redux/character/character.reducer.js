@@ -1,5 +1,3 @@
-// import Character_Detail from "./character-data/character-detail.data";
-
 import CharacterActionTypes from "./character.type";
 
 const INITIAL_STATE = {

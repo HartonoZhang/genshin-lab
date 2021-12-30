@@ -4,15 +4,18 @@ const ItemDescription = ({ data }) => {
   const { description, pieceBonus } = data;
   return (
     <ItemDescriptionContainer>
-      {description ? (
-        <p>{description}</p>
+      {description || pieceBonus ? (
+        description ? (
+          <p>{description}</p>
+        ) : (
+          pieceBonus.map((item) => (
+            <p key={item.setBonus}>
+              <span>{item.setBonus}:</span> {item.description}
+            </p>
+          ))
+        )
       ) : (
-        pieceBonus.map((item) => (
-          <p key={item.setBonus}>
-            <span>{item.setBonus}:</span> {item.description} 
-          </p>
-        ))
-        
+        ""
       )}
     </ItemDescriptionContainer>
   );
