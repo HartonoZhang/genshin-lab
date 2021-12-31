@@ -1,19 +1,22 @@
-import { withRouter, useHistory, useRouteMatch } from "react-router-dom";
+import { useHistory, useRouteMatch } from "react-router-dom";
 
 import {
   CharacterItemContainer,
   CharacterProfile,
   CharacterNameContainer,
+  RoleStatement,
 } from "./character-item.style";
 
 const CharacterItem = ({ character }) => {
   const history = useHistory();
   const match = useRouteMatch();
-  const { name, imgSrc, linkUrl } = character;
+  const checkMatch = match.url === "/" ? match.url : "";
+  const { name, imgSrc, linkUrl, role } = character;
   return (
     <CharacterItemContainer
-      onClick={() => history.push(`${match.url}characters/${linkUrl}`)}
+      onClick={() => history.push(`${checkMatch}${linkUrl}`)}
     >
+      {role ? <RoleStatement>{role}</RoleStatement> : ""}
       <CharacterProfile
         src={`${process.env.PUBLIC_URL + imgSrc}`}
         alt="character"
@@ -23,4 +26,4 @@ const CharacterItem = ({ character }) => {
   );
 };
 
-export default withRouter(CharacterItem);
+export default CharacterItem;

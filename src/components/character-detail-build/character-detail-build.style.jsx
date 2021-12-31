@@ -1,10 +1,10 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { FontColorVision } from "../../high-order-component/style";
 
 const DisplayFlexDirection = css`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const CharacterDetailBuildContainer = styled.div`
   ${DisplayFlexDirection};

@@ -21,6 +21,6 @@ export const CharacterName = styled.span`
 `;
 
 export const CharacterVision = styled.span`
-  text-shadow: 0 0 2px black;
   ${FontColorVision};
+  font-weight: bold;
 `;

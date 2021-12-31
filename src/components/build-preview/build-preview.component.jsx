@@ -4,7 +4,7 @@ import {
   WeaponArtifactBuildContainer,
   TitleBuild,
   SetItemsContainer,
-  Tes
+  OrStatement,
 } from "./build-preview.style";
 
 const BuildPreview = ({ titleBuild, data }) => {
@@ -15,7 +15,7 @@ const BuildPreview = ({ titleBuild, data }) => {
         item.set ? (
           <SetItemsContainer key={item.id}>
             <BuildItem data={item} />
-            <Tes>OR</Tes>
+            <OrStatement>OR</OrStatement>
           </SetItemsContainer>
         ) : (
           <SetItemsContainer key={item.id}>
