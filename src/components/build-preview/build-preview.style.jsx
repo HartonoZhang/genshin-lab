@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const WeaponArtifactBuildContainer = styled.div`
   width: 50%;
+  margin-top: 8px;
 `
 
 export const TitleBuild = styled.span`

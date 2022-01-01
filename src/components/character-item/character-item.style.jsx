@@ -9,7 +9,7 @@ export const CharacterItemContainer = styled.div`
   transition: 0.2s;
 
   &:hover {
-    transform: scale(1.04);
+    transform: translateY(-5px);
   }
 `;
 
@@ -27,8 +27,8 @@ export const CharacterNameContainer = styled.span`
 
 export const RoleStatement = styled.span`
   color: white;
-  background: rgb(48,44,44);
+  background-color: rgb(65, 65, 65);
   padding: 4px;
   margin: 2px 0;
-  border-radius: 4px;
+  border-radius: 8px;
 `

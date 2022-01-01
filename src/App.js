@@ -16,7 +16,7 @@ const App = () => {
   // const data = useSelector();
 
   // useEffect(() => {
-  //   addCollectionAndDocuments('character_detail', data)
+  //   addCollectionAndDocuments('', data)
   // }, [data])
 
   return(

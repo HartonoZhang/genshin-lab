@@ -2,13 +2,13 @@ import SubtitleCharacterDetail from "../subtitle-character-detail/subtitle-chara
 import TeamsOverview from "../teams-overview/teams-overview.component";
 import { CharacterDetailTeamsContainer, CharacterDetailTeamsOverviewContainer } from "./character-detail-teams.style";
 
-const CharacterDetailTeams = ({ teams }) => {
-  const { title, team } = teams;
+const CharacterDetailTeams = ({ teamDatas }) => {
+  const { title, teams } = teamDatas;
   return <CharacterDetailTeamsContainer>
     <SubtitleCharacterDetail>{title}</SubtitleCharacterDetail>
     <CharacterDetailTeamsOverviewContainer>
       {
-        team.map(item => (
+        teams.map(item => (
           <TeamsOverview key={item.id} data={item} />
         ))
       }
