@@ -1,10 +1,10 @@
-import { HeaderOverviewArtifactContainer } from "./header-overview-artifact.style";
+import { HeaderOverviewArtifactContainer, TextHeaderResponsive } from "./header-overview-artifact.style";
 
 const HeaderOverviewArtifact = () => (
   <HeaderOverviewArtifactContainer>
     <div>Artifact</div>
-    <div>Rarity</div>
-    <div>Set Bonus</div>
+    <TextHeaderResponsive>Rarity</TextHeaderResponsive>
+    <TextHeaderResponsive>Set Bonus</TextHeaderResponsive>
   </HeaderOverviewArtifactContainer>
 );
 

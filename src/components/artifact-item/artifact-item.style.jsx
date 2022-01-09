@@ -17,10 +17,6 @@ export const ArtifactItemContainer = styled.div`
 
 export const ArtifactRarity = styled.img`
   margin: 0 auto;
-
-  @media screen and (max-width: 800px) {
-    width: 70%;
-  }
 `
 
 export const ArtifactTextColumnContainer = styled.div`

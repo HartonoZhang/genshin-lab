@@ -13,14 +13,16 @@ export const WeaponItemContainer = styled.div`
     display: grid;
     align-items: center;
   }
+
+  @media screen and (max-width: 900px) {
+    div {
+      margin: 6px 0;
+    }
+  }
 `;
 
 export const WeaponRarity = styled.img`
   margin: 0 auto;
-
-  @media screen and (max-width: 800px) {
-    width: 70%;
-  }
 `
 
 export const WeaponTextColumnContainer = styled.div`
@@ -43,7 +45,7 @@ export const WeaponName = styled.span`
   margin-top: 4px;
 
   @media screen and (max-width: 700px) {
-    margin-top: 3px;
+    margin-top: 5px;
   }
 `;
 

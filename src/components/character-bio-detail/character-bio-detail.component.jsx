@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { selectCharacterDetailVision } from "../../redux/character/character.selector";
-import { CharacterBiographyDetail, CharacterName, CharacterVision } from "./character-bio-detail.style"
+import { CharacterBiographyDetail, CharacterName, CharacterVision, CharacterVisionWeapon } from "./character-bio-detail.style"
 
 const CharacterBioDetail = ({ data }) => {
   const { characterId } = useParams();
@@ -10,10 +10,10 @@ const CharacterBioDetail = ({ data }) => {
   return (
     <CharacterBiographyDetail>
       <CharacterName>{name}</CharacterName>
-      <span>
+      <CharacterVisionWeapon>
         <CharacterVision className={vision}>{vision}</CharacterVision> -{" "}
         {weapon_type}
-      </span>
+      </CharacterVisionWeapon>
       <img src={`${process.env.PUBLIC_URL + rarity}`} alt="rarity" />
     </CharacterBiographyDetail>
   );

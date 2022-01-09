@@ -20,6 +20,12 @@ export const ItemDetailContainer = styled.div`
   span {
     margin: 6px 0;
   }
+
+  @media screen and (max-width: 750px) {
+    span{
+      font-size: 15px;
+    }
+  }
 `;
 
 export const ItemName = styled.span`

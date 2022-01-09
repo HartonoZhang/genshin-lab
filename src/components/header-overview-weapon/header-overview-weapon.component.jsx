@@ -1,12 +1,12 @@
-import { HeaderOverviewWeaponContainer } from "./header-overview-weapon.style";
+import { HeaderOverviewWeaponContainer, TextHeaderResponsive } from "./header-overview-weapon.style";
 
 const HeaderOverviewWeapon = () => (
   <HeaderOverviewWeaponContainer>
     <div>Weapon</div>
-    <div>Type</div>
-    <div>Rarity</div>
-    <div>Bonus Effect</div>
-    <div>Skill</div>
+    <TextHeaderResponsive>Type</TextHeaderResponsive>
+    <TextHeaderResponsive>Rarity</TextHeaderResponsive>
+    <TextHeaderResponsive>Bonus Effect</TextHeaderResponsive>
+    <TextHeaderResponsive>Skill</TextHeaderResponsive>
   </HeaderOverviewWeaponContainer>
 );
 

@@ -32,11 +32,21 @@ export const HeaderCharacterDetailContainer = styled.div`
   &.Geo {
     background-color: #5f5641;
   }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
 `;
 
 
 export const CharacterBiographyContainer = styled.div`
   display: flex;
+
+  @media screen and (max-width: 700px) {
+    margin: 0 auto;
+  }
 `;
 
 

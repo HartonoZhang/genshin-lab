@@ -44,4 +44,8 @@ export const RoleStatement = styled.span`
   @media screen and (max-width: 650px) {
     font-size: 13px;
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+  }
 `

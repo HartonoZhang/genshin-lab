@@ -32,8 +32,8 @@ export const ImageItemBuild = styled.img`
   border-radius: 10px;
 
   @media screen and (max-width: 750px) {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 `;
 
@@ -47,9 +47,17 @@ export const ItemName = styled.span`
   font-size: 18px;
   padding: 5px 0;
   ${FontColorVision};
+
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+  }
 `;
 
 export const ItemSubDescription = styled.span`
   color: white;
   font-size: 15px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 13px;
+  }
 `;

@@ -22,4 +22,14 @@ export const RoleBuildCharacter = styled.span`
   font-weight: bolder;
   font-size: 18px;
   ${FontColorVision};
+
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+  }
 `;
+
+export const RoleBuildDescription = styled.span`
+  @media screen and (max-width: 750px) {
+    font-size: 14px;
+  }
+`

@@ -38,6 +38,10 @@ export const LogoText = styled.span`
 export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const OptionContainer = styled(Link)`

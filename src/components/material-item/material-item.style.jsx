@@ -24,5 +24,7 @@ export const MaterialItemContainer = styled.div`
     span {
       font-size: 13px;
     }
+
+    margin: 10px;
   }
 `;

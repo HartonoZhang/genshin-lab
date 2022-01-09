@@ -10,4 +10,8 @@ export const HeaderAscensionStyle = css`
 export const HeaderAscensionContainer = styled.div`
   ${HeaderAscensionStyle}
   ${HeaderTableDefaultContainer}
+
+  @media screen and (max-width: 700px) {
+    font-size: 14px;
+  }
 `;

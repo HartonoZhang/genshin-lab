@@ -8,6 +8,7 @@ import {
   CharacterDetailBuildContainer,
   BuildContainer,
   RoleBuildCharacter,
+  RoleBuildDescription,
 } from "./character-detail-build.style";
 
 const CharacterDetailBuild = ({ build }) => {
@@ -21,7 +22,7 @@ const CharacterDetailBuild = ({ build }) => {
       <SubtitleCharacterDetail>{title_build}</SubtitleCharacterDetail>
       <BuildContainer>
         <RoleBuildCharacter className={vision}>{role_build}</RoleBuildCharacter>
-        <span>{description}</span>
+        <RoleBuildDescription>{description}</RoleBuildDescription>
         <BuildOverview data={buildData} />
       </BuildContainer>
     </CharacterDetailBuildContainer>

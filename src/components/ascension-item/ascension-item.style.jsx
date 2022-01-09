@@ -7,4 +7,9 @@ export const AscensionItemContainer = styled.div`
   padding: 12px 8px;
   border: 1px solid #bea4a4;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    font-size: 14px;
+    padding: 4px;
+  }
 `

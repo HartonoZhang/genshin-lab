@@ -6,15 +6,17 @@ export const HeaderTableArtifactContainer = css`
   grid-template-columns: 30% 15% 55%;
 
   @media screen and (max-width: 700px) {
-    grid-template-columns: 20% 15% 65%;
+    grid-template-columns: 100%;
   }
 `;
+
+export const TextHeaderResponsive = styled.div`
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`
 
 export const HeaderOverviewArtifactContainer = styled.div`
   ${HeaderTableArtifactContainer}
   ${HeaderTableDefaultContainer}
-
-  @media screen and (max-width: 700px) {
-    font-size: 12px;
-  }
 `;

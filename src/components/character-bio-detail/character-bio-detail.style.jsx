@@ -19,8 +19,12 @@ export const CharacterName = styled.span`
   font-weight: bolder;
   text-shadow: 0 0 2px black;
 
-  @media screen and (max-width: 650px) {
-    font-size: 22px;
+  @media screen and (max-width: 700px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
   }
 `;
 
@@ -28,3 +32,9 @@ export const CharacterVision = styled.span`
   ${FontColorVision};
   font-weight: bold;
 `;
+
+export const CharacterVisionWeapon = styled.span`
+  @media screen and (max-width: 400px) {
+    font-size: 13px;
+  }
+`
