@@ -8,4 +8,9 @@ export const ItemDescriptionContainer = styled.div`
   span {
     color: white;
   }
+
+  @media screen and (max-width: 750px) {
+    text-align: center;
+    font-size: 13px;
+  }
 `;

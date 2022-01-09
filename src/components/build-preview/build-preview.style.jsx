@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const WeaponArtifactBuildContainer = styled.div`
   width: 50%;
   margin-top: 8px;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
 `
 
 export const TitleBuild = styled.span`

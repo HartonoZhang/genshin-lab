@@ -3,6 +3,7 @@ import {
   WeaponTextColumnContainer,
   WeaponName,
   WeaponImage,
+  WeaponRarity
 } from "./weapon-item.style";
 
 const WeaponItem = ({ weapon }) => {
@@ -13,12 +14,12 @@ const WeaponItem = ({ weapon }) => {
         <WeaponImage src={`${process.env.PUBLIC_URL + imgSrc}`} alt="weapon" />
         <WeaponName>{name}</WeaponName>
       </WeaponTextColumnContainer>
-      <div>{type}</div>
+      <WeaponTextColumnContainer>{type}</WeaponTextColumnContainer>
       <WeaponTextColumnContainer>
-        <img src={`${process.env.PUBLIC_URL + rarity}`} alt="rarity" />
+        <WeaponRarity src={`${process.env.PUBLIC_URL + rarity}`} alt="rarity" />
       </WeaponTextColumnContainer>
-      <div>{bonus_effect}</div>
-      <div>{skill}</div>
+      <WeaponTextColumnContainer>{bonus_effect}</WeaponTextColumnContainer>
+      <WeaponTextColumnContainer>{skill}</WeaponTextColumnContainer>
     </WeaponItemContainer>
   );
 };

@@ -4,6 +4,10 @@ import { FontColorVision } from "../../high-order-component/style";
 export const BuildItemInfoContainer = styled.div`
   display: flex;
   gap: 10px;
+
+  @media screen and (max-width: 750px) {
+    margin: 0 auto;
+  }
 `;
 
 export const BuildItemImageContainer = styled.div`
@@ -14,6 +18,10 @@ export const ImageItemRarity = styled.img`
   position: absolute;
   bottom: -2px;
   left: 10px;
+
+  @media screen and (max-width: 750px) {
+    width: 75%;
+  }
 `;
 
 export const ImageItemBuild = styled.img`
@@ -22,6 +30,11 @@ export const ImageItemBuild = styled.img`
   background-color: rgb(65, 65, 65);
   padding: 4px;
   border-radius: 10px;
+
+  @media screen and (max-width: 750px) {
+    width: 70px;
+    height: 70px;
+  }
 `;
 
 export const BuildInformation = styled.div`

@@ -5,10 +5,18 @@ export const SearchBoxContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   color: white;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleSearch = styled.p`
   font-size: 24px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 22px;
+  }
 `;
 
 export const SearchBoxInputContainer = styled.div`
@@ -22,4 +30,8 @@ export const SearchInputContainer = styled.input`
   border: none;
   color: white;
   font-size: 15px;
+
+  @media screen and (max-width: 700px) {
+    margin-bottom: 20px;
+  }
 `;

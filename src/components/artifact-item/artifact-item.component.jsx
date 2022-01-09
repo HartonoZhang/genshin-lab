@@ -4,6 +4,7 @@ import {
   ArtifactName,
   ArtifactImage,
   SetBonusBold,
+  ArtifactRarity
 } from "./artifact-item.style";
 
 const ArtifactItem = ({ artifact }) => {
@@ -18,7 +19,7 @@ const ArtifactItem = ({ artifact }) => {
         <ArtifactName>{name}</ArtifactName>
       </ArtifactTextColumnContainer>
       <ArtifactTextColumnContainer>
-        <img src={`${process.env.PUBLIC_URL + rarity}`} alt="rarity" />
+        <ArtifactRarity src={`${process.env.PUBLIC_URL + rarity}`} alt="rarity" />
       </ArtifactTextColumnContainer>
       <ArtifactTextColumnContainer>
         {pieceBonus.map((bonus) => (

@@ -31,4 +31,9 @@ export const FilterTypeItemContainer = styled.div`
 export const TypeItemImage = styled.img`
   width: 50px;
   height: 50px;
+
+  @media screen and (max-width: 700px) {
+    width: 36px;
+    height: 36px;
+  }
 `;

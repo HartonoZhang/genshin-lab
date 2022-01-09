@@ -18,6 +18,10 @@ export const CharacterName = styled.span`
   font-size: 26px;
   font-weight: bolder;
   text-shadow: 0 0 2px black;
+
+  @media screen and (max-width: 650px) {
+    font-size: 22px;
+  }
 `;
 
 export const CharacterVision = styled.span`

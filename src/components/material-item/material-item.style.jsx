@@ -14,4 +14,15 @@ export const MaterialItemContainer = styled.div`
   span{
     margin-left: 8px;
   }
+
+  @media screen and (max-width: 700px) {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      font-size: 13px;
+    }
+  }
 `;

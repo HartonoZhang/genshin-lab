@@ -12,23 +12,48 @@ export const WeaponItemContainer = styled.div`
   div {
     display: grid;
     align-items: center;
-    padding: 5px;
   }
 `;
+
+export const WeaponRarity = styled.img`
+  margin: 0 auto;
+
+  @media screen and (max-width: 800px) {
+    width: 70%;
+  }
+`
 
 export const WeaponTextColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
   margin: 0 auto;
+
+  @media screen and (max-width: 750px) {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 11px;
+  }
 `;
 
 export const WeaponName = styled.span`
   margin-top: 4px;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 3px;
+  }
 `;
 
 export const WeaponImage = styled.img`
   width: 110px;
   height: 110px;
   margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    width: 70px;
+    height: 70px;
+  }
 `;

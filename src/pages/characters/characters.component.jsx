@@ -3,7 +3,6 @@ import CharacterDetailPage from "./character-detail-page.component";
 
 import { CharacterContainer } from "./characters.style";
 
-
 const CharacterPage = () => {
   const match = useRouteMatch();
   return (

@@ -48,6 +48,10 @@ export const FontColorVision = css`
 
 export const PageContainer = styled.div`
   ${DefaultPageContainer}
+
+  @media screen and (max-width: 700px) {
+    padding: 15px 20px
+  }
 `;
 
 export const OverviewContainer = styled.div`

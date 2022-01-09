@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const HeaderTableWeaponContainer = css`
   display: grid;
-  grid-template-columns: 23% 10% 10% 12% 45%;
+  grid-template-columns: 20% 10% 10% 15% 45%;
 `;
 
 export const HeaderTableDefaultContainer = css`
@@ -18,4 +18,8 @@ export const HeaderTableDefaultContainer = css`
 export const HeaderOverviewWeaponContainer = styled.div`
   ${HeaderTableWeaponContainer}
   ${HeaderTableDefaultContainer}
+
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+  }
 `;

@@ -1,5 +1,4 @@
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
+import { useDispatch, useSelector } from "react-redux";
 
 import { filterTypeWeapon } from "../../redux/weapon/weapon.action";
 import { selectWeapons } from "../../redux/weapon/weapon.selector";
@@ -9,7 +8,10 @@ import {
   TypeItemImage,
 } from "./filter-type-item.style";
 
-const FilterTypeItem = ({ item, filterWeapon, typeWeaponCurrent }) => {
+const FilterTypeItem = ({ item }) => {
+  const typeWeaponCurrent = useSelector(selectWeapons);
+  const dispatch = useDispatch();
+
   const { typeWeapon, imageUrl } = item;
   const active = typeWeaponCurrent.find(
     (check) => check.type_weapon === typeWeapon
@@ -17,19 +19,11 @@ const FilterTypeItem = ({ item, filterWeapon, typeWeaponCurrent }) => {
   return (
     <FilterTypeItemContainer
       isActive={active && typeWeaponCurrent.length === 1}
-      onClick={() => filterWeapon(typeWeapon)}
+      onClick={() => dispatch(filterTypeWeapon(typeWeapon))}
     >
       <TypeItemImage src={`${process.env.PUBLIC_URL + imageUrl}`} alt="type" />
     </FilterTypeItemContainer>
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  typeWeaponCurrent: selectWeapons,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  filterWeapon: (item) => dispatch(filterTypeWeapon(item)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(FilterTypeItem);
+export default FilterTypeItem;

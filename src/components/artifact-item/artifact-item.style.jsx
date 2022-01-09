@@ -12,7 +12,14 @@ export const ArtifactItemContainer = styled.div`
   div {
     display: grid;
     align-items: center;
-    padding: 5px;
+  }
+`
+
+export const ArtifactRarity = styled.img`
+  margin: 0 auto;
+
+  @media screen and (max-width: 800px) {
+    width: 70%;
   }
 `
 
@@ -21,16 +28,39 @@ export const ArtifactTextColumnContainer = styled.div`
   flex-direction: column;
   align-self: center;
   margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 11px;
+  }
 `;
 
 export const ArtifactName = styled.span`
   margin-top: 4px;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 1px;
+  }
 `;
 
 export const ArtifactImage = styled.img`
   width: 110px;
   height: 110px;
   margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
 export const SetBonusBold = styled.span`

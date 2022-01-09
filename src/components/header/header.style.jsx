@@ -29,6 +29,10 @@ export const LogoText = styled.span`
   font-size: 18px;
   color: white;
   padding: 0 5px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 15px;
+  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -41,6 +45,11 @@ export const OptionContainer = styled(Link)`
   font-size: 14px;
   color: rgb(207, 198, 198);
   transition: 0.5s;
+
+  @media screen and (max-width: 700px) {
+    font-size: 12px;
+    padding: 0 5px;
+  }
 
   &:hover {
     color: white;
