@@ -34,28 +34,3 @@ export const LogoText = styled.span`
     font-size: 15px;
   }
 `;
-
-export const OptionsContainer = styled.div`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 700px) {
-    display: none;
-  }
-`;
-
-export const OptionContainer = styled(Link)`
-  padding: 0 15px;
-  font-size: 14px;
-  color: rgb(207, 198, 198);
-  transition: 0.5s;
-
-  @media screen and (max-width: 700px) {
-    font-size: 12px;
-    padding: 0 5px;
-  }
-
-  &:hover {
-    color: white;
-  }
-`;

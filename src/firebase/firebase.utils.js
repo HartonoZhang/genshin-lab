@@ -84,9 +84,4 @@ export const convertCharacterDetailSnapshotToData = (collections) => {
   return transformedCollection;
 };
 
-export const convertTypeWeaponToData = (collections) => {
-  const transformedCollection = collections.data();
-  return {0 : transformedCollection};
-}
-
 export default firebase;

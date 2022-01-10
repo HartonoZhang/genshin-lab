@@ -35,10 +35,6 @@ export const WeaponTextColumnContainer = styled.div`
     font-size: 12px;
     padding: 0 5px;
   }
-
-  @media screen and (max-width: 500px) {
-    font-size: 11px;
-  }
 `;
 
 export const WeaponName = styled.span`
@@ -46,6 +42,7 @@ export const WeaponName = styled.span`
 
   @media screen and (max-width: 700px) {
     margin-top: 5px;
+    font-size: 15px;
   }
 `;
 

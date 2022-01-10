@@ -36,4 +36,9 @@ export const TypeItemImage = styled.img`
     width: 36px;
     height: 36px;
   }
+
+  @media screen and (max-width: 350px) {
+    width: 26px;
+    height: 26px;
+  }
 `;

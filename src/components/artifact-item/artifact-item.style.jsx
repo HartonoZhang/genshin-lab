@@ -27,11 +27,6 @@ export const ArtifactTextColumnContainer = styled.div`
 
   @media screen and (max-width: 700px) {
     font-size: 12px;
-    padding: 0 10px;
-  }
-
-  @media screen and (max-width: 500px) {
-    font-size: 11px;
   }
 `;
 
@@ -40,6 +35,10 @@ export const ArtifactName = styled.span`
 
   @media screen and (max-width: 700px) {
     margin-top: 1px;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 15px;
   }
 `;
 

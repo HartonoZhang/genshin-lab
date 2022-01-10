@@ -85,4 +85,16 @@ export const CharacterRatingContainer = styled.div`
       background-color: #d9ab42;
     }
   }
+
+  @media screen and (max-width: 700px) {
+    span{
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    span{
+      font-size: 16px;
+    }
+  }
 `;

@@ -1,25 +1,27 @@
-import { HeaderContainer, HeaderTopContainer, LogoContainer, LogoText, OptionContainer, OptionsContainer } from "./header.style";
+import { useSelector } from "react-redux";
 
-const Header = () => (
+import { HeaderContainer, HeaderTopContainer, LogoContainer, LogoText } from "./header.style";
+
+import HeaderDropdown from "../header-dropdown/header-dropdown.component";
+import HeaderOptions from "../header-options/header-options.component";
+
+import { selectDrodownHeader } from "../../redux/header/header.selector";
+
+const Header = () => {
+  const isHidden = useSelector(selectDrodownHeader);
+  return (
   <HeaderContainer>
     <HeaderTopContainer>
       <LogoContainer to="/">
         <LogoText>GENSHIN LAB</LogoText>
       </LogoContainer>
-      <OptionsContainer>
-        <OptionContainer to="/">
-          CHARACTERS
-        </OptionContainer>
-        <OptionContainer to="/artifacts">
-          ARTIFACTS
-        </OptionContainer>
-        <OptionContainer to="/weapons">
-          WEAPONS
-        </OptionContainer>
-      </OptionsContainer>
+      <HeaderOptions />
+      {
+        isHidden ? "" : <HeaderDropdown />
+      }
     </HeaderTopContainer>
   </HeaderContainer>
-);
+)};
 
 
 export default Header;

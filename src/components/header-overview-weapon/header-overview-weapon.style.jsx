@@ -23,13 +23,9 @@ export const TextHeaderResponsive = styled.div`
   @media screen and (max-width: 700px) {
     display: none;
   }
-`
+`;
 
 export const HeaderOverviewWeaponContainer = styled.div`
   ${HeaderTableWeaponContainer}
   ${HeaderTableDefaultContainer}
-
-  @media screen and (max-width: 900px) {
-    font-size: 12px;
-  }
 `;
