@@ -1,11 +1,13 @@
 import DropdownHeaderIcon from "../dropdown-header-icon/dropdown-header-icon.component";
-import { HeaderOptionContainer, HeaderOptionsContainer } from "./header-options.style";
+import { HeaderOptionsContainer } from "./header-options.style";
+import HeaderOptionItem from "../header-option-item/header-option-item.component";
+
 
 const HeaderOptions = () => (
   <HeaderOptionsContainer>
-    <HeaderOptionContainer to="/">CHARACTERS</HeaderOptionContainer>
-    <HeaderOptionContainer to="/artifacts">ARTIFACTS</HeaderOptionContainer>
-    <HeaderOptionContainer to="/weapons">WEAPONS</HeaderOptionContainer>
+    <HeaderOptionItem linkNavigate="/" isresponsive='true'>CHARACTERS</HeaderOptionItem>
+    <HeaderOptionItem linkNavigate="/artifacts" isresponsive='true'>ARTIFACTS</HeaderOptionItem>
+    <HeaderOptionItem linkNavigate="/weapons" isresponsive='true'>WEAPONS</HeaderOptionItem>
     <DropdownHeaderIcon />
   </HeaderOptionsContainer>
 );

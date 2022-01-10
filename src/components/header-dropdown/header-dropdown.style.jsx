@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const HeaderDropdownContainer = styled.div`
   position: absolute;
@@ -23,16 +22,4 @@ export const HeaderDropdownContainer = styled.div`
 export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-export const LinkContainer = styled(Link)`
-  padding: 0 10px;
-  font-size: 12px;
-  color: rgb(207, 198, 198);
-  transition: 0.5s;
-  border-bottom: 1px solid rgb(190, 164, 164);
-
-  &:hover {
-    color: white;
-  }
 `;
