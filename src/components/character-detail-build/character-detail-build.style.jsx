@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { FontColorVision } from "../../high-order-component/style";
+import { FontColorVision } from "../../hoc/style";
 
 const DisplayFlexDirection = css`
   display: flex;

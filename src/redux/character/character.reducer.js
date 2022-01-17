@@ -1,6 +1,8 @@
 import CharacterActionTypes from "./character.type";
+import { DataCharacter } from "./db-data";
 
 const INITIAL_STATE = {
+  dataDB: DataCharacter,
   listCharacter: null,
   isFetching: false,
   characterDetail: null,

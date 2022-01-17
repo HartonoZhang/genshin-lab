@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { searchFilterArtifact } from "../../redux/artifact/artifact.action";
 import { selectListArtifact } from "../../redux/artifact/artifact.selector";
 
-import { OverviewContainer } from "../../high-order-component/style";
+import { OverviewContainer } from "../../hoc/style";
 
 import SearchBox from "../search-box/search-box.component";
 import HeaderOverviewArtifact from "../header-overview-artifact/header-overview-artifact.component";

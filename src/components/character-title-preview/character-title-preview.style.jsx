@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FontColorVision } from "../../high-order-component/style";
+import { FontColorVision } from "../../hoc/style";
 
 export const CharacterTitlePreviewContainer = styled.div`
   display: flex;

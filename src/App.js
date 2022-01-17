@@ -8,15 +8,15 @@ import Footer from "./components/footer/footer.component";
 import WeaponPage from "./pages/weapons/weapons.component";
 import ArtifactPage from "./pages/artifacts/artifacts.component";
 
-// import { addCollectionAndDocuments } from "./firebase/firebase.utils";
+// import { addCollectionAndDocuments, addingViaJson } from "./firebase/firebase.utils";
 // import { useEffect } from "react";
 // import { useSelector } from "react-redux";
+// import { selectDataDB } from "./redux/character/character.selector";
 
 const App = () => {
-  // const data = useSelector();
-
+  // const data = useSelector(selectDataDB);
   // useEffect(() => {
-  //   addCollectionAndDocuments('', data)
+  //   addingViaJson(data, 'yunjin')
   // }, [data])
 
   return(

@@ -16,6 +16,10 @@ firebase.initializeApp(firebaseConfig);
 
 export const firestore = firebase.firestore();
 
+export const addingViaJson = async (data, name) => {
+  return await firestore.collection("character_detail").doc(name).set(data);
+};
+
 export const addCollectionAndDocuments = async (
   collectionKey,
   objectsToAdd

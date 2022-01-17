@@ -7,9 +7,9 @@ import {
   selectTypeWeapon,
 } from "../../redux/weapon/weapon.selector";
 
-import { OverviewContainer } from "../../high-order-component/style";
+import { OverviewContainer } from "../../hoc/style";
 
-import { checkData } from "../../high-order-component/utils-data";
+import { checkData } from "../../hoc/utils-data";
 
 import SearchBox from "../search-box/search-box.component";
 import WeaponPreview from "../weapon-preview/weapon-preview.component";

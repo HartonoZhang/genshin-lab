@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { fetchListArtifactStart } from "../../redux/artifact/artifact.action";
 
-import { PageContainer } from "../../high-order-component/style";
+import { PageContainer } from "../../hoc/style";
 import OverviewArtifactContainer from "../../components/artifact-overview/artifact-overview.container";
 
 const ArtifactPage = () => {

@@ -12,6 +12,11 @@ export const selectCharacterDetail = createSelector(
   (character) => character.characterDetail
 );
 
+export const selectDataDB = createSelector(
+  [selectCharacter],
+  (character) => character.dataDB
+);
+
 export const selectSearchFilterCharacter = createSelector(
   [selectCharacter],
   (character) => character.searchCharacter

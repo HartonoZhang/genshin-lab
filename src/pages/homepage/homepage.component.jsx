@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { fetchListCharactersStart } from "../../redux/character/character.action";
 
-import { PageContainer } from "../../high-order-component/style";
+import { PageContainer } from "../../hoc/style";
 import OverviewCharacterContainer from "../../components/character-overview/character-overview.container";
 
 const HomePage = () => {
