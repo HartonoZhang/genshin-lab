@@ -8,6 +8,7 @@ const CharacterDetailPage = () => {
   const { characterId } = useParams();
   
   const dispatch = useDispatch();
+  
   useLayoutEffect(() => {
     dispatch(fetchCharacterDetailStart(characterId));
   }, [dispatch, characterId]);

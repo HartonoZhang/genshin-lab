@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const CharacterPreviewContainer = styled.div`
   color: white;
-  width: 100%;
 `;
 
 export const CharacterPreviewHeaderContainer = styled.div`
