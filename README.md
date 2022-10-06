@@ -1,6 +1,9 @@
 # Genshin Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It pulls data from firebase.
+
+LIVE LINK: https://genshinlab-zh.herokuapp.com/
+
 
 ## Available Scripts
 
